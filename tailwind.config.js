@@ -3,7 +3,6 @@ const colors = require("./utilities/colors");
 
 module.exports = {
   content: [
-    "./src/**/*.{html,js}",
     "./pages/**/*.{html,js}",
     "./index.html",
     "./utilities/index.js",
