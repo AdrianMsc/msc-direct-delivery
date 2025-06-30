@@ -646,16 +646,24 @@ video {
   height: 1.75rem;
 }
 
+.h-\[140px\] {
+  height: 140px;
+}
+
+.h-full {
+  height: 100%;
+}
+
 .min-h-52 {
   min-height: 13rem;
 }
 
-.w-2\/12 {
-  width: 16.666667%;
-}
-
 .w-6\/12 {
   width: 50%;
+}
+
+.w-auto {
+  width: auto;
 }
 
 .w-full {
@@ -664,6 +672,10 @@ video {
 
 .min-w-24 {
   min-width: 6rem;
+}
+
+.max-w-screen-2xl {
+  max-width: 1536px;
 }
 
 .cursor-pointer {
@@ -692,6 +704,10 @@ video {
 
 .gap-6 {
   gap: 1.5rem;
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }
 
 .rounded {
@@ -753,6 +769,11 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .p-3 {
   padding: 0.75rem;
 }
@@ -778,6 +799,16 @@ video {
 .py-1 {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
+}
+
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .pt-6 {
@@ -848,9 +879,39 @@ video {
   background-color: rgb(241 245 254 / var(--tw-bg-opacity, 1));
 }
 
+@media (min-width: 640px) {
+  .sm\:w-3\/12 {
+    width: 25%;
+  }
+
+  .sm\:w-4\/12 {
+    width: 33.333333%;
+  }
+
+  .sm\:flex-row {
+    flex-direction: row;
+  }
+}
+
 @media (min-width: 768px) {
+  .md\:w-3\/12 {
+    width: 25%;
+  }
+
+  .md\:w-4\/12 {
+    width: 33.333333%;
+  }
+
+  .md\:w-2\/12 {
+    width: 16.666667%;
+  }
+
   .md\:min-w-32 {
     min-width: 8rem;
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
   }
 
   .md\:px-5 {
@@ -860,11 +921,43 @@ video {
 }
 
 @media (min-width: 1024px) {
+  .lg\:ml-auto {
+    margin-left: auto;
+  }
+
+  .lg\:mt-0 {
+    margin-top: 0px;
+  }
+
+  .lg\:w-2\/12 {
+    width: 16.666667%;
+  }
+
   .lg\:w-3\/12 {
     width: 25%;
   }
 
   .lg\:w-4\/12 {
     width: 33.333333%;
+  }
+
+  .lg\:flex-row {
+    flex-direction: row;
+  }
+
+  .lg\:items-center {
+    align-items: center;
+  }
+
+  .lg\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .\32xl\:bg-red-600 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(220 38 38 / var(--tw-bg-opacity, 1));
   }
 }
