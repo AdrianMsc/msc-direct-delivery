@@ -497,129 +497,172 @@
     <section class="bg-white py-6">
       <div class="mx-auto max-w-screen-2xl px-5 flex flex-col">
         <div
-          class="flex items-center after:flex-1 after:bg-monochromes-grey_xlight after:h-[1px] after:order-2"
+          class="flex flex-col sm:flex-row sm:flex-wrap sm:items-center after:flex-1 after:bg-monochromes-grey_xlight after:h-[1px] sm:after:order-2 after:hidden sm:after:block"
         >
-          <h1 class="font-bold text-2xl mr-2 order-1">Browse Our Categories</h1>
+          <h1 class="font-bold text-2xl mr-2 order-1 sm:order-1">
+            Browse Our Categories
+          </h1>
 
           <button
-            class="order-3 text-primary-blue_xdark border rounded border-monochromes-grey_xlight font-bold py-1 px-4 ml-2"
+            id="toggleHidden"
+            class="order-3 sm:order-3 text-primary-blue_xdark border rounded border-monochromes-grey_xlight font-bold py-1 px-4 sm:ml-2 lg:hidden"
           >
             View All Categories →
           </button>
+
+          <p
+            class="text-sm order-2 sm:order-4 sm:basis-full sm:w-full py-3 sm:py-0"
+          >
+            Extensive product range tailored around your Metalworking, Safety
+            and MRO needs
+          </p>
         </div>
-        <p class="text-sm">
-          Extensive product range tailored around your Metalworking, Safety and
-          MRO needs
-        </p>
 
         <div
-          class="flex flex-wrap border border-monochromes-grey_xlight rounded w-full mt-4 text-center font-bold text-sm"
+          id="categories"
+          class="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 border-l border-t border-monochromes-grey_xlight rounded w-full mt-4 text-center font-bold text-sm"
         >
           <article
-            class="flex flex-col w-6/12 sm:w-4/12 md:w-4/12 lg:w-2/12 xl:2/12 min-h-52 border-b border-r border-monochromes-grey_xlight items-center justify-center"
+            class="flex p-2 sm:p-0 flex-col sm:min-h-52 border-b border-r border-monochromes-grey_xlight sm:items-center justify-center"
           >
-            <div class="p-3 flex items-center justify-center flex-col">
-              <img src="../assets/homepage/milling.jpg" class="mb-2" />
-              <p>Miling</p>
+            <div class="sm:p-3 flex items-center sm:justify-center sm:flex-col">
+              <img
+                src="../assets/homepage/milling.jpg"
+                class="sm:mb-2 w-16 mr-2 sm:mr-0"
+              />
+              <p class="text-base">Miling</p>
             </div>
           </article>
 
           <article
-            class="flex flex-col w-6/12 sm:w-4/12 md:w-4/12 lg:w-2/12 xl:2/12 min-h-52 border-b border-r border-monochromes-grey_xlight items-center justify-center"
+            class="flex p-2 sm:p-0 flex-col sm:min-h-52 border-b border-r border-monochromes-grey_xlight sm:items-center justify-center"
           >
-            <div class="p-3 flex items-center justify-center flex-col">
-              <img src="../assets/homepage/hole-making.png" class="mb-2" />
-              <p>Hole Making</p>
+            <div class="sm:p-3 flex items-center sm:justify-center sm:flex-col">
+              <img
+                src="../assets/homepage/hole-making.png"
+                class="sm:mb-2 w-16 mr-2 sm:mr-0"
+              />
+              <p class="text-base">Hole Making</p>
             </div>
           </article>
 
           <article
-            class="flex flex-col w-6/12 sm:w-4/12 md:w-4/12 lg:w-2/12 xl:2/12 min-h-52 border-b border-r border-monochromes-grey_xlight items-center justify-center"
+            class="flex p-2 sm:p-0 flex-col sm:min-h-52 border-b border-r border-monochromes-grey_xlight sm:items-center justify-center"
           >
-            <div class="p-3 flex items-center justify-center flex-col">
-              <img src="../assets/homepage/safety.png" class="mb-2" />
-              <p>Safety</p>
+            <div class="sm:p-3 flex items-center sm:justify-center sm:flex-col">
+              <img
+                src="../assets/homepage/safety.png"
+                class="sm:mb-2 w-16 mr-2 sm:mr-0"
+              />
+              <p class="text-base">Safety</p>
             </div>
           </article>
 
           <article
-            class="flex flex-col w-6/12 sm:w-4/12 md:w-4/12 lg:w-2/12 xl:2/12 min-h-52 border-b border-r border-monochromes-grey_xlight items-center justify-center"
+            class="flex p-2 sm:p-0 flex-col sm:min-h-52 border-b border-r border-monochromes-grey_xlight sm:items-center justify-center"
           >
-            <div class="p-3 flex items-center justify-center flex-col">
-              <img src="../assets/homepage/abrasives.png" class="mb-2" />
-              <p>Abrasives</p>
+            <div class="sm:p-3 flex items-center sm:justify-center sm:flex-col">
+              <img
+                src="../assets/homepage/abrasives.png"
+                class="sm:mb-2 w-16 mr-2 sm:mr-0"
+              />
+              <p class="text-base">Abrasives</p>
             </div>
           </article>
 
           <article
-            class="flex flex-col w-6/12 sm:w-4/12 md:w-4/12 lg:w-2/12 xl:2/12 min-h-52 border-b border-r border-monochromes-grey_xlight items-center justify-center"
+            class="flex p-2 sm:p-0 flex-col sm:min-h-52 border-b border-r border-monochromes-grey_xlight sm:items-center justify-center"
           >
-            <div class="p-3 flex items-center justify-center flex-col">
-              <img src="../assets/homepage/indexable.png" class="mb-2" />
-              <p>Indexable Cutting Tools</p>
+            <div class="sm:p-3 flex items-center sm:justify-center sm:flex-col">
+              <img
+                src="../assets/homepage/indexable.png"
+                class="sm:mb-2 w-16 mr-2 sm:mr-0"
+              />
+              <p class="text-base">Indexable Cutting Tools</p>
             </div>
           </article>
 
           <article
-            class="flex flex-col w-6/12 sm:w-4/12 md:w-4/12 lg:w-2/12 xl:2/12 min-h-52 border-b border-r border-monochromes-grey_xlight items-center justify-center"
+            class="flex p-2 sm:p-0 flex-col sm:min-h-52 border-b border-r border-monochromes-grey_xlight sm:items-center justify-center"
           >
-            <div class="p-3 flex items-center justify-center flex-col">
-              <img src="../assets/homepage/power-tools.png" class="mb-2" />
-              <p>Power Tools</p>
+            <div class="sm:p-3 flex items-center sm:justify-center sm:flex-col">
+              <img
+                src="../assets/homepage/power-tools.png"
+                class="sm:mb-2 w-16 mr-2 sm:mr-0"
+              />
+              <p class="text-base">Power Tools</p>
             </div>
           </article>
 
           <article
-            class="flex flex-col w-6/12 sm:w-4/12 md:w-4/12 lg:w-2/12 xl:2/12 min-h-52 border-b border-r border-monochromes-grey_xlight items-center justify-center"
+            class="flex p-2 sm:p-0 flex-col sm:min-h-52 border-b border-r border-monochromes-grey_xlight sm:items-center justify-center"
           >
-            <div class="p-3 flex items-center justify-center flex-col">
-              <img src="../assets/homepage/hose.png" class="mb-2" />
-              <p>Hose, Tube, Fittings & Valves</p>
+            <div class="sm:p-3 flex items-center sm:justify-center sm:flex-col">
+              <img
+                src="../assets/homepage/hose.png"
+                class="sm:mb-2 w-16 mr-2 sm:mr-0"
+              />
+              <p class="text-base">Hose, Tube, Fittings & Valves</p>
             </div>
           </article>
 
           <article
-            class="flex flex-col w-6/12 sm:w-4/12 md:w-4/12 lg:w-2/12 xl:2/12 min-h-52 border-b border-r border-monochromes-grey_xlight items-center justify-center"
+            class="flex p-2 sm:p-0 flex-col sm:min-h-52 border-b border-r border-monochromes-grey_xlight sm:items-center justify-center"
           >
-            <div class="p-3 flex items-center justify-center flex-col">
-              <img src="../assets/homepage/hand-tools.png" class="mb-2" />
-              <p>Hand Tools</p>
+            <div class="sm:p-3 flex items-center sm:justify-center sm:flex-col">
+              <img
+                src="../assets/homepage/hand-tools.png"
+                class="sm:mb-2 w-16 mr-2 sm:mr-0"
+              />
+              <p class="text-base">Hand Tools</p>
             </div>
           </article>
 
           <article
-            class="flex flex-col w-6/12 sm:w-4/12 md:w-4/12 lg:w-2/12 xl:2/12 min-h-52 border-b border-r border-monochromes-grey_xlight items-center justify-center"
+            class="flex p-2 sm:p-0 flex-col sm:min-h-52 border-b border-r border-monochromes-grey_xlight sm:items-center justify-center"
           >
-            <div class="p-3 flex items-center justify-center flex-col">
-              <img src="../assets/homepage/clamping.png" class="mb-2" />
-              <p>Clamping, Workholding & Positioning</p>
+            <div class="sm:p-3 flex items-center sm:justify-center sm:flex-col">
+              <img
+                src="../assets/homepage/clamping.png"
+                class="sm:mb-2 w-16 mr-2 sm:mr-0"
+              />
+              <p class="text-base">Clamping, Workholding & Positioning</p>
             </div>
           </article>
 
           <article
-            class="flex flex-col w-6/12 sm:w-4/12 md:w-4/12 lg:w-2/12 xl:2/12 min-h-52 border-b border-r border-monochromes-grey_xlight items-center justify-center"
+            class="flex p-2 sm:p-0 flex-col sm:min-h-52 border-b border-r border-monochromes-grey_xlight sm:items-center justify-center"
           >
-            <div class="p-3 flex items-center justify-center flex-col">
-              <img src="../assets/homepage/fasteners.png" class="mb-2" />
-              <p>Fasteners</p>
+            <div class="sm:p-3 flex items-center sm:justify-center sm:flex-col">
+              <img
+                src="../assets/homepage/fasteners.png"
+                class="sm:mb-2 w-16 mr-2 sm:mr-0"
+              />
+              <p class="text-base">Fasteners</p>
             </div>
           </article>
 
           <article
-            class="flex flex-col w-6/12 sm:w-4/12 md:w-4/12 lg:w-2/12 xl:2/12 min-h-52 border-b border-r border-monochromes-grey_xlight items-center justify-center"
+            class="flex p-2 sm:p-0 flex-col sm:min-h-52 border-b border-r border-monochromes-grey_xlight sm:items-center justify-center"
           >
-            <div class="p-3 flex items-center justify-center flex-col">
-              <img src="../assets/homepage/janitorial.png" class="mb-2" />
-              <p>Janitorial & Facility Maintenance</p>
+            <div class="sm:p-3 flex items-center sm:justify-center sm:flex-col">
+              <img
+                src="../assets/homepage/janitorial.png"
+                class="sm:mb-2 w-16 mr-2 sm:mr-0"
+              />
+              <p class="text-base">Janitorial & Facility Maintenance</p>
             </div>
           </article>
 
           <article
-            class="flex flex-col w-6/12 sm:w-4/12 md:w-4/12 lg:w-2/12 xl:2/12 min-h-52 border-b border-r border-monochromes-grey_xlight items-center justify-center"
+            class="flex p-2 sm:p-0 flex-col sm:min-h-52 border-b border-r border-monochromes-grey_xlight sm:items-center justify-center rounded"
           >
-            <div class="p-3 flex items-center justify-center flex-col">
-              <img src="../assets/homepage/lighting.png" class="mb-2" />
-              <p>Lighting & Electrical</p>
+            <div class="sm:p-3 flex items-center sm:justify-center sm:flex-col">
+              <img
+                src="../assets/homepage/lighting.png"
+                class="sm:mb-2 w-16 mr-2 sm:mr-0"
+              />
+              <p class="text-base">Lighting & Electrical</p>
             </div>
           </article>
         </div>
@@ -643,15 +686,15 @@
             <img
               src="../assets/homepage/procurement.jpg"
               alt=""
-              class="object-cover h-full w-auto"
+              class="object-cover h-full w-full"
             />
           </div>
           <div
-            class="p-5 flex flex-col lg:flex-row items-start lg:items-center"
+            class="p-5 flex sm:flex-col lg:flex-row items-center sm:items-start lg:items-center"
           >
             <span class="font-bold text-base">eProcurement</span>
             <button
-              class="mt-4 lg:mt-0 lg:ml-auto px-2 md:px-5 rounded-full font-bold cursor-pointer min-w-24 md:min-w-32 bg-transparent border text-primary-blue_dark border-primary-blue_dark h-7 text-sm py-1 hover:bg-primary-blue_xlight"
+              class="sm:mt-4 lg:mt-0 ml-auto sm:ml-0 lg:ml-auto px-2 md:px-5 rounded-full font-bold cursor-pointer min-w-24 md:min-w-32 bg-transparent border text-primary-blue_dark border-primary-blue_dark h-7 text-sm py-1 hover:bg-primary-blue_xlight"
             >
               Learn More
             </button>
@@ -665,7 +708,7 @@
             <img
               src="../assets/homepage/inventory-management.jpg"
               alt=""
-              class="object-cover h-full w-auto"
+              class="object-cover h-full w-full"
             />
           </div>
           <div
@@ -673,7 +716,7 @@
           >
             <span class="font-bold text-base">Inventory Management</span>
             <button
-              class="mt-4 lg:mt-0 lg:ml-auto px-2 md:px-5 rounded-full font-bold cursor-pointer min-w-24 md:min-w-32 bg-transparent border text-primary-blue_dark border-primary-blue_dark h-7 text-sm py-1 hover:bg-primary-blue_xlight"
+              class="sm:mt-4 lg:mt-0 ml-auto sm:ml-0 lg:ml-auto px-2 md:px-5 rounded-full font-bold cursor-pointer min-w-24 md:min-w-32 bg-transparent border text-primary-blue_dark border-primary-blue_dark h-7 text-sm py-1 hover:bg-primary-blue_xlight"
             >
               Learn More
             </button>
@@ -687,7 +730,7 @@
             <img
               src="../assets/homepage/safety-service.jpg"
               alt=""
-              class="object-cover h-full w-auto"
+              class="object-cover h-full w-full"
             />
           </div>
           <div
@@ -695,7 +738,7 @@
           >
             <span class="font-bold text-base">Safety Service</span>
             <button
-              class="mt-4 lg:mt-0 lg:ml-auto px-2 md:px-5 rounded-full font-bold cursor-pointer min-w-24 md:min-w-32 bg-transparent border text-primary-blue_dark border-primary-blue_dark h-7 text-sm py-1 hover:bg-primary-blue_xlight"
+              class="sm:mt-4 lg:mt-0 ml-auto sm:ml-0 lg:ml-auto px-2 md:px-5 rounded-full font-bold cursor-pointer min-w-24 md:min-w-32 bg-transparent border text-primary-blue_dark border-primary-blue_dark h-7 text-sm py-1 hover:bg-primary-blue_xlight"
             >
               Learn More
             </button>
@@ -718,8 +761,12 @@
 
       <!-- 3rd section -->
       <div class="flex flex-col md:flex-row gap-6">
-        <article class="w-full md:w-6/12 bg-white rounded flex">
-          <div class="p-5 w-6/12 flex flex-col justify-center">
+        <article
+          class="w-full md:w-6/12 bg-white rounded flex flex-col sm:flex-row"
+        >
+          <div
+            class="order-2 sm:order-1 p-5 sm:w-6/12 flex flex-col justify-center"
+          >
             <b class="font-bold text-base">Save with our sales flyers</b>
             <p class="text-sm mb-4">
               This body copy area can support up to 108 cc max including spaces
@@ -733,28 +780,30 @@
           </div>
 
           <div
-            class="w-6/12 overflow-hidden flex items-center justify-center rounded-r"
+            class="order-1 sm:order-2 sm:w-6/12 overflow-hidden flex items-center justify-center rounded-r"
           >
             <img
               src="../assets/homepage/save-our-sales.jpg"
               alt=""
-              class="h-full w-auto object-cover"
+              class="h-full w-full object-cover"
             />
           </div>
         </article>
 
-        <article class="w-full md:w-6/12 bg-white rounded flex">
+        <article
+          class="w-full md:w-6/12 bg-white rounded flex flex-col sm:flex-row"
+        >
           <div
-            class="w-6/12 overflow-hidden flex items-center justify-center rounded-l"
+            class="sm:w-6/12 overflow-hidden flex items-center justify-center rounded-l"
           >
             <img
               src="../assets/homepage/exclusive-brand.jpg"
               alt=""
-              class="h-full w-auto object-cover"
+              class="h-full w-full object-cover"
             />
           </div>
 
-          <div class="p-5 w-6/12 flex flex-col items-start">
+          <div class="p-5 sm:w-6/12 flex flex-col items-start">
             <b class="font-bold text-base">Exclusive Brands Clearance</b>
             <p class="text-sm mb-4">Save up to 40% on calipers & micrometers</p>
             <button
@@ -768,10 +817,8 @@
 
       <!-- 4th section -->
 
-      <div
-        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
-      >
-        <article class="bg-white rounded my-6">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 my-6">
+        <article class="bg-white rounded">
           <div class="h-[140px] overflow-hidden rounded-t">
             <img
               src="../assets/homepage/two-ine.jpg"
@@ -781,7 +828,7 @@
           </div>
 
           <div class="p-5 flex flex-col items-start">
-            <p class="font-bold text-base mb-4">
+            <p class="font-bold text-base">
               This is a Line Can Take up to 48CC Max or 2 line
             </p>
             <button
@@ -792,7 +839,7 @@
           </div>
         </article>
 
-        <article class="bg-white rounded my-6">
+        <article class="bg-white rounded">
           <div class="h-[140px] overflow-hidden rounded-t">
             <img
               src="../assets/homepage/rigid.jpg"
@@ -813,7 +860,7 @@
           </div>
         </article>
 
-        <article class="bg-white rounded my-6">
+        <article class="bg-white rounded">
           <div class="h-[140px] overflow-hidden rounded-t">
             <img
               src="../assets/homepage/gloves.jpg"
@@ -834,7 +881,7 @@
           </div>
         </article>
 
-        <article class="bg-white rounded my-6">
+        <article class="bg-white rounded">
           <div class="h-[140px] overflow-hidden rounded-t">
             <img
               src="../assets/homepage/dactory.jpg"
@@ -859,10 +906,13 @@
       <!-- 5ft section -->
 
       <article class="bg-white rounded p-6">
-        <h3 class="text-2xl mb-4">MSC Industrial Supply Co.</h3>
+        <h3 class="text-2xl mb-4 font-bold">MSC Industrial Supply Co.</h3>
         <p class="text-sm mb-4 text-monochromes-grey">
           MSC Industrial Supply, Inc. is a leading North American distributor of
-          metalworking and maintenance, repair and operations (MRO) products and
+          metalworking and
+          <a href="#" class="text-black underline">maintenance</a>, repair and
+          operations
+          <a href="#" class="text-black underline">(MRO) products</a> and
           services. With over 75 years of experience, MSC is dedicated to
           helping customers drive greater productivity, profitability and
           growth. MSC features over 1.5 million products ready-to-ship. Our
@@ -879,6 +929,48 @@
         </p>
       </article>
     </section>
+
+    <script>
+      const categoriesContainer = document.getElementById("categories");
+      const articles = categoriesContainer.querySelectorAll("article");
+      const toggleBtn = document.getElementById("toggleHidden");
+
+      let hidden = true; // iniciar ocultando los extra
+
+      function getLimit() {
+        const width = window.innerWidth;
+        if (width < 768) return 6;
+        if (width < 1024) return 8;
+        return articles.length;
+      }
+
+      function updateVisibleArticles() {
+        const limit = getLimit();
+
+        articles.forEach((article, index) => {
+          if (hidden && index >= limit) {
+            article.classList.add("hidden");
+          } else {
+            article.classList.remove("hidden");
+          }
+        });
+
+        toggleBtn.textContent = hidden
+          ? "View All Categories →"
+          : "View Less Categories";
+      }
+
+      toggleBtn.addEventListener("click", () => {
+        hidden = !hidden;
+        updateVisibleArticles();
+      });
+
+      window.addEventListener("resize", () => {
+        updateVisibleArticles();
+      });
+
+      window.addEventListener("DOMContentLoaded", updateVisibleArticles);
+    </script>
 
     <!-- SCRIPTS -->
     <script src="../utilities/index.js"></script>
