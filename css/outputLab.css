@@ -622,10 +622,6 @@ video {
   margin-left: 0.5rem;
 }
 
-.ml-auto {
-  margin-left: auto;
-}
-
 .mr-2 {
   margin-right: 0.5rem;
 }
@@ -636,10 +632,6 @@ video {
 
 .mt-auto {
   margin-top: auto;
-}
-
-.box-border {
-  box-sizing: border-box;
 }
 
 .flex {
@@ -693,12 +685,12 @@ video {
   height: 100%;
 }
 
-.min-h-52 {
-  min-height: 13rem;
+.h-\[168px\] {
+  height: 168px;
 }
 
-.w-2\/12 {
-  width: 16.666667%;
+.min-h-52 {
+  min-height: 13rem;
 }
 
 .w-6 {
@@ -736,18 +728,6 @@ video {
 
 .max-w-screen-2xl {
   max-width: 1536px;
-}
-
-.flex-shrink-0 {
-  flex-shrink: 0;
-}
-
-.flex-shrink {
-  flex-shrink: 1;
-}
-
-.shrink {
-  flex-shrink: 1;
 }
 
 .rotate-180 {
@@ -809,27 +789,6 @@ video {
 
 .gap-6 {
   gap: 1.5rem;
-}
-
-.gap-2 {
-  gap: 0.5rem;
-}
-
-.gap-x-2 {
-  -moz-column-gap: 0.5rem;
-       column-gap: 0.5rem;
-}
-
-.space-x-6 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(1.5rem * var(--tw-space-x-reverse));
-  margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
-.space-x-1 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(0.25rem * var(--tw-space-x-reverse));
-  margin-left: calc(0.25rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .overflow-hidden {
@@ -948,6 +907,11 @@ video {
      object-fit: cover;
 }
 
+.object-fill {
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
 .p-3 {
   padding: 0.75rem;
 }
@@ -962,11 +926,6 @@ video {
 
 .p-6 {
   padding: 1.5rem;
-}
-
-.px-10 {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
 }
 
 .px-2 {
@@ -1007,11 +966,6 @@ video {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-}
-
-.py-5 {
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
 }
 
 .pl-4 {
@@ -1131,10 +1085,6 @@ video {
     width: 33.333333%;
   }
 
-  .sm\:w-6\/12 {
-    width: 50%;
-  }
-
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1149,20 +1099,12 @@ video {
     display: flex;
   }
 
-  .md\:w-2\/12 {
-    width: 16.666667%;
-  }
-
   .md\:w-4\/12 {
     width: 33.333333%;
   }
 
   .md\:w-6\/12 {
     width: 50%;
-  }
-
-  .md\:w-3\/12 {
-    width: 25%;
   }
 
   .md\:min-w-32 {
@@ -1183,10 +1125,6 @@ video {
 
   .md\:gap-4 {
     gap: 1rem;
-  }
-
-  .md\:gap-6 {
-    gap: 1.5rem;
   }
 
   .md\:px-5 {
