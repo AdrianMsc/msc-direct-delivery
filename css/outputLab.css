@@ -723,6 +723,10 @@ video {
   width: 100%;
 }
 
+.w-screen {
+  width: 100vw;
+}
+
 .min-w-24 {
   min-width: 6rem;
 }
@@ -1246,6 +1250,10 @@ video {
     width: 50%;
   }
 
+  .md\:w-full {
+    width: 100%;
+  }
+
   .md\:min-w-32 {
     min-width: 8rem;
   }
@@ -1299,6 +1307,10 @@ video {
 
   .lg\:w-4\/12 {
     width: 33.333333%;
+  }
+
+  .lg\:w-full {
+    width: 100%;
   }
 
   .lg\:grid-cols-4 {
