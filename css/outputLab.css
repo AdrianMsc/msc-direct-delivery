@@ -774,12 +774,20 @@ video {
   align-items: center;
 }
 
+.items-baseline {
+  align-items: baseline;
+}
+
 .justify-center {
   justify-content: center;
 }
 
 .justify-between {
   justify-content: space-between;
+}
+
+.justify-items-end {
+  justify-items: end;
 }
 
 .gap-1 {
@@ -1006,6 +1014,10 @@ video {
 
 .text-center {
   text-align: center;
+}
+
+.align-bottom {
+  vertical-align: bottom;
 }
 
 .text-2xl {
@@ -1292,6 +1304,10 @@ video {
 
   .md\:items-center {
     align-items: center;
+  }
+
+  .md\:items-baseline {
+    align-items: baseline;
   }
 
   .md\:gap-4 {
