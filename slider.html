@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slider MSC</title>
+    <link rel="stylesheet" href="css/outputSlider.css" />
+  </head>
+  <body>
+    <main class="max-w-screen-2xl mx-auto">
+      <div
+        class="bg-white w-screen lg:w-full h-fit flex flex-col pt-4 pb-1 p-6 gap-3 overflow-hidden"
+      >
+        <div class="flex flex-row justify-between items-center gap-4">
+          <h3 class="text-xl font-bold text-nowrap">Recently Viewed</h3>
+          <div
+            class="border-b border-monochromes-grey_xlight w-full hidden lg:block"
+          ></div>
+
+          <!-- SLIDER CONTROLS -->
+
+          <div
+            class="flex-row gap-1 w-fit items-center hidden sm:flex"
+            id="paginationControls"
+          >
+            <button
+              id="prevPageBtn"
+              class="flex rounded-full bg-transparent border border-monochromes-grey_xlight size-10 items-center justify-center"
+            >
+              <img src="./assets/svg/chevron-l-2.png" />
+            </button>
+            <div
+              id="paginationIndicators"
+              class="flex flex-row gap-1 w-fit"
+            ></div>
+            <button
+              id="nextPageBtn"
+              class="flex rounded-full bg-transparent border border-monochromes-grey_xlight size-10 items-center justify-center"
+            >
+              <img src="./assets/svg/chevron-r-2.png" />
+            </button>
+          </div>
+        </div>
+
+        <div
+          id="recentlyViewed"
+          class="flex flex-row justify-between gap-3 overflow-x-scroll pb-3"
+        >
+          <!-- Item Card -->
+          <article
+            class="max-w-[235px] h-fit p-4 gap-1 border rounded border-gray hover:border-transparent hover:shadow-xl transition-all duration-300"
+          >
+            <div class="h-[88px] w-[184px] flex justify-center">
+              <img
+                src="./assets/homepage/drill.png"
+                alt="Product Image"
+                class="object-fit"
+              />
+            </div>
+            <div class="flex flex-row justify-between items-center">
+              <p class="text-sm">Web Price</p>
+              <p><span class="font-bold text-lg">$293.17</span>/ea</p>
+            </div>
+            <p class="text-xs font-bold">DEWALT</p>
+            <p class="text-sm font-bold">
+              Power Tool Battery: 20V, Lithium-ion
+            </p>
+            <p class="text-sm pt-1">MSC# 73659377</p>
+            <button
+              class="bg-primary-blue text-white font-bold py-2 px-5 rounded-full w-full mt-4 hover:bg-primary-blue_dark transition-all duration-300"
+            >
+              Add to Cart 1
+            </button>
+          </article>
+
+          <article
+            class="max-w-[235px] h-fit p-4 gap-1 border rounded border-gray hover:border-transparent hover:shadow-xl transition-all duration-300"
+          >
+            <div class="h-[88px] w-[184px] flex justify-center">
+              <img
+                src="./assets/homepage/gloves.png"
+                alt="Product Image"
+                class="object-fit"
+              />
+            </div>
+            <div class="flex flex-row justify-between items-center">
+              <p class="text-sm">Web Price</p>
+              <p><span class="font-bold text-lg">$293.17</span>/ea</p>
+            </div>
+            <p class="text-xs font-bold">DEWALT</p>
+            <p class="text-sm font-bold">
+              Power Tool Battery: 20V, Lithium-ion
+            </p>
+            <p class="text-sm pt-1">MSC# 73659377</p>
+            <button
+              class="bg-primary-blue text-white font-bold py-2 px-5 rounded-full w-full mt-4 hover:bg-primary-blue_dark transition-all duration-300"
+            >
+              Add to Cart 2
+            </button>
+          </article>
+
+          <article
+            class="max-w-[235px] h-fit p-4 gap-1 border rounded border-gray hover:border-transparent hover:shadow-xl transition-all duration-300"
+          >
+            <div class="h-[88px] w-[184px] flex justify-center">
+              <img
+                src="./assets/homepage/battery.png"
+                alt="Product Image"
+                class="object-fit"
+              />
+            </div>
+            <div class="flex flex-row justify-between items-center">
+              <p class="text-sm">Web Price</p>
+              <p><span class="font-bold text-lg">$293.17</span>/ea</p>
+            </div>
+            <p class="text-xs font-bold">DEWALT</p>
+            <p class="text-sm font-bold">
+              Power Tool Battery: 20V, Lithium-ion
+            </p>
+            <p class="text-sm pt-1">MSC# 73659377</p>
+            <button
+              class="bg-primary-blue text-white font-bold py-2 px-5 rounded-full w-full mt-4 hover:bg-primary-blue_dark transition-all duration-300"
+            >
+              Add to Cart 3
+            </button>
+          </article>
+
+          <article
+            class="max-w-[235px] h-fit p-4 gap-1 border rounded border-gray hover:border-transparent hover:shadow-xl transition-all duration-300"
+          >
+            <div class="h-[88px] w-[184px] flex justify-center">
+              <img
+                src="./assets/homepage/ac.png"
+                alt="Product Image"
+                class="object-fit"
+              />
+            </div>
+            <div class="flex flex-row justify-between items-center">
+              <p class="text-sm">Web Price</p>
+              <p><span class="font-bold text-lg">$293.17</span>/ea</p>
+            </div>
+            <p class="text-xs font-bold">DEWALT</p>
+            <p class="text-sm font-bold">
+              Power Tool Battery: 20V, Lithium-ion
+            </p>
+            <p class="text-sm pt-1">MSC# 73659377</p>
+            <button
+              class="bg-primary-blue text-white font-bold py-2 px-5 rounded-full w-full mt-4 hover:bg-primary-blue_dark transition-all duration-300"
+            >
+              Add to Cart 4
+            </button>
+          </article>
+
+          <article
+            class="max-w-[235px] h-fit p-4 gap-1 border rounded border-gray hover:border-transparent hover:shadow-xl transition-all duration-300"
+          >
+            <div class="h-[88px] w-[184px] flex justify-center">
+              <img
+                src="./assets/homepage/compresor.png"
+                alt="Product Image"
+                class="object-fit"
+              />
+            </div>
+            <div class="flex flex-row justify-between items-center">
+              <p class="text-sm">Web Price</p>
+              <p><span class="font-bold text-lg">$293.17</span>/ea</p>
+            </div>
+            <p class="text-xs font-bold">DEWALT</p>
+            <p class="text-sm font-bold">
+              Power Tool Battery: 20V, Lithium-ion
+            </p>
+            <p class="text-sm pt-1">MSC# 73659377</p>
+            <button
+              class="bg-primary-blue text-white font-bold py-2 px-5 rounded-full w-full mt-4 hover:bg-primary-blue_dark transition-all duration-300"
+            >
+              Add to Cart 5
+            </button>
+          </article>
+
+          <article
+            class="max-w-[235px] h-fit p-4 gap-1 border rounded border-gray hover:border-transparent hover:shadow-xl transition-all duration-300"
+          >
+            <div class="h-[88px] w-[184px] flex justify-center">
+              <img
+                src="./assets/homepage/battery2.png"
+                alt="Product Image"
+                class="object-fit"
+              />
+            </div>
+            <div class="flex flex-row justify-between items-center">
+              <p class="text-sm">Web Price</p>
+              <p><span class="font-bold text-lg">$293.17</span>/ea</p>
+            </div>
+            <p class="text-xs font-bold">DEWALT</p>
+            <p class="text-sm font-bold">
+              Power Tool Battery: 20V, Lithium-ion
+            </p>
+            <p class="text-sm pt-1">MSC# 73659377</p>
+            <button
+              class="bg-primary-blue text-white font-bold py-2 px-5 rounded-full w-full mt-4 hover:bg-primary-blue_dark transition-all duration-300"
+            >
+              Add to Cart 6
+            </button>
+          </article>
+
+          <article
+            class="max-w-[235px] h-fit p-4 gap-1 border rounded border-gray hover:border-transparent hover:shadow-xl transition-all duration-300"
+          >
+            <div class="h-[88px] w-[184px] flex justify-center">
+              <img
+                src="./assets/homepage/battery2.png"
+                alt="Product Image"
+                class="object-fit"
+              />
+            </div>
+            <div class="flex flex-row justify-between items-center">
+              <p class="text-sm">Web Price</p>
+              <p><span class="font-bold text-lg">$293.17</span>/ea</p>
+            </div>
+            <p class="text-xs font-bold">DEWALT</p>
+            <p class="text-sm font-bold">
+              Power Tool Battery: 20V, Lithium-ion
+            </p>
+            <p class="text-sm pt-1">MSC# 73659377</p>
+            <button
+              class="bg-primary-blue text-white font-bold py-2 px-5 rounded-full w-full mt-4 hover:bg-primary-blue_dark transition-all duration-300"
+            >
+              Add to Cart 7
+            </button>
+          </article>
+
+          <article
+            class="max-w-[235px] h-fit p-4 gap-1 border rounded border-gray hover:border-transparent hover:shadow-xl transition-all duration-300"
+          >
+            <div class="h-[88px] w-[184px] flex justify-center">
+              <img
+                src="./assets/homepage/battery2.png"
+                alt="Product Image"
+                class="object-fit"
+              />
+            </div>
+            <div class="flex flex-row justify-between items-center">
+              <p class="text-sm">Web Price</p>
+              <p><span class="font-bold text-lg">$293.17</span>/ea</p>
+            </div>
+            <p class="text-xs font-bold">DEWALT</p>
+            <p class="text-sm font-bold">
+              Power Tool Battery: 20V, Lithium-ion
+            </p>
+            <p class="text-sm pt-1">MSC# 73659377</p>
+            <button
+              class="bg-primary-blue text-white font-bold py-2 px-5 rounded-full w-full mt-4 hover:bg-primary-blue_dark transition-all duration-300"
+            >
+              Add to Cart 8
+            </button>
+          </article>
+
+          <article
+            class="max-w-[235px] h-fit p-4 gap-1 border rounded border-gray hover:border-transparent hover:shadow-xl transition-all duration-300"
+          >
+            <div class="h-[88px] w-[184px] flex justify-center">
+              <img
+                src="./assets/homepage/battery2.png"
+                alt="Product Image"
+                class="object-fit"
+              />
+            </div>
+            <div class="flex flex-row justify-between items-center">
+              <p class="text-sm">Web Price</p>
+              <p><span class="font-bold text-lg">$293.17</span>/ea</p>
+            </div>
+            <p class="text-xs font-bold">DEWALT</p>
+            <p class="text-sm font-bold">
+              Power Tool Battery: 20V, Lithium-ion
+            </p>
+            <p class="text-sm pt-1">MSC# 73659377</p>
+            <button
+              class="bg-primary-blue text-white font-bold py-2 px-5 rounded-full w-full mt-4 hover:bg-primary-blue_dark transition-all duration-300"
+            >
+              Add to Cart 9
+            </button>
+          </article>
+
+          <article
+            class="max-w-[235px] h-fit p-4 gap-1 border rounded border-gray hover:border-transparent hover:shadow-xl transition-all duration-300"
+          >
+            <div class="h-[88px] w-[184px] flex justify-center">
+              <img
+                src="./assets/homepage/battery2.png"
+                alt="Product Image"
+                class="object-fit"
+              />
+            </div>
+            <div class="flex flex-row justify-between items-center">
+              <p class="text-sm">Web Price</p>
+              <p><span class="font-bold text-lg">$293.17</span>/ea</p>
+            </div>
+            <p class="text-xs font-bold">DEWALT</p>
+            <p class="text-sm font-bold">
+              Power Tool Battery: 20V, Lithium-ion
+            </p>
+            <p class="text-sm pt-1">MSC# 73659377</p>
+            <button
+              class="bg-primary-blue text-white font-bold py-2 px-5 rounded-full w-full mt-4 hover:bg-primary-blue_dark transition-all duration-300"
+            >
+              Add to Cart 10
+            </button>
+          </article>
+
+          <article
+            class="max-w-[235px] h-fit p-4 gap-1 border rounded border-gray hover:border-transparent hover:shadow-xl transition-all duration-300"
+          >
+            <div class="h-[88px] w-[184px] flex justify-center">
+              <img
+                src="./assets/homepage/battery2.png"
+                alt="Product Image"
+                class="object-fit"
+              />
+            </div>
+            <div class="flex flex-row justify-between items-center">
+              <p class="text-sm">Web Price</p>
+              <p><span class="font-bold text-lg">$293.17</span>/ea</p>
+            </div>
+            <p class="text-xs font-bold">DEWALT</p>
+            <p class="text-sm font-bold">
+              Power Tool Battery: 20V, Lithium-ion
+            </p>
+            <p class="text-sm pt-1">MSC# 73659377</p>
+            <button
+              class="bg-primary-blue text-white font-bold py-2 px-5 rounded-full w-full mt-4 hover:bg-primary-blue_dark transition-all duration-300"
+            >
+              Add to Cart 11
+            </button>
+          </article>
+
+          <article
+            class="max-w-[235px] h-fit p-4 gap-1 border rounded border-gray hover:border-transparent hover:shadow-xl transition-all duration-300"
+          >
+            <div class="h-[88px] w-[184px] flex justify-center">
+              <img
+                src="./assets/homepage/battery2.png"
+                alt="Product Image"
+                class="object-fit"
+              />
+            </div>
+            <div class="flex flex-row justify-between items-center">
+              <p class="text-sm">Web Price</p>
+              <p><span class="font-bold text-lg">$293.17</span>/ea</p>
+            </div>
+            <p class="text-xs font-bold">DEWALT</p>
+            <p class="text-sm font-bold">
+              Power Tool Battery: 20V, Lithium-ion
+            </p>
+            <p class="text-sm pt-1">MSC# 73659377</p>
+            <button
+              class="bg-primary-blue text-white font-bold py-2 px-5 rounded-full w-full mt-4 hover:bg-primary-blue_dark transition-all duration-300"
+            >
+              Add to Cart 12
+            </button>
+          </article>
+        </div>
+      </div>
+    </main>
+
+    <script>
+      const container = document.getElementById("recentlyViewed");
+      const articles = container.querySelectorAll("article");
+      const indicators = document.getElementById("paginationIndicators");
+      const prevBtn = document.getElementById("prevPageBtn");
+      const nextBtn = document.getElementById("nextPageBtn");
+      const paginationWrapper = document.getElementById("paginationControls");
+
+      let currentPage = 0;
+      let itemsPerPage = 6;
+      let totalPages = 2;
+
+      function getResponsiveLimit() {
+        const width = window.innerWidth;
+        if (width < 768) return 3; // mobile: 3 por página
+        if (width < 1024) return 4; // tablet: 4 por página
+        return 6; // desktop: 6 por página
+      }
+
+      function updatePagination() {
+        const width = window.innerWidth;
+        itemsPerPage = getResponsiveLimit();
+        totalPages = Math.ceil(articles.length / itemsPerPage);
+
+        // Oculta el paginador si es mobile
+        if (width < 768) {
+          paginationWrapper.classList.add("hidden");
+        } else {
+          paginationWrapper.classList.remove("hidden");
+        }
+
+        // Clamp
+        currentPage = Math.min(currentPage, totalPages - 1);
+
+        const start = currentPage * itemsPerPage;
+        const end = start + itemsPerPage;
+
+        // Aplica visibilidad estrictamente
+        articles.forEach((article, i) => {
+          if (i >= start && i < end) {
+            article.classList.remove("hidden");
+          } else {
+            article.classList.add("hidden");
+          }
+        });
+
+        // Indicadores
+        indicators.innerHTML = "";
+        for (let i = 0; i < totalPages; i++) {
+          const dot = document.createElement("div");
+          dot.className = `rounded-full h-[6px] cursor-pointer ${
+            i === currentPage
+              ? "bg-primary-blue w-6"
+              : "bg-monochromes-grey_xlight w-6"
+          }`;
+          dot.addEventListener("click", () => {
+            currentPage = i;
+            updatePagination();
+          });
+          indicators.appendChild(dot);
+        }
+      }
+
+      prevBtn.addEventListener("click", () => {
+        if (currentPage > 0) {
+          currentPage--;
+          updatePagination();
+        }
+      });
+
+      nextBtn.addEventListener("click", () => {
+        if (currentPage < totalPages - 1) {
+          currentPage++;
+          updatePagination();
+        }
+      });
+
+      window.addEventListener("resize", updatePagination);
+      window.addEventListener("DOMContentLoaded", updatePagination);
+    </script>
+  </body>
+</html>
