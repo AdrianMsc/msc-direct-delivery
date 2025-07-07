@@ -782,10 +782,6 @@ video {
   justify-content: space-between;
 }
 
-.justify-items-center {
-  justify-items: center;
-}
-
 .gap-1 {
   gap: 0.25rem;
 }
@@ -1003,10 +999,6 @@ video {
   text-align: center;
 }
 
-.align-middle {
-  vertical-align: middle;
-}
-
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -1117,6 +1109,15 @@ video {
   background-color: rgb(219 219 219 / var(--tw-bg-opacity, 1));
 }
 
+.hover\:border:hover {
+  border-width: 1px;
+}
+
+.hover\:border-primary-blue:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(28 88 238 / var(--tw-border-opacity, 1));
+}
+
 .hover\:border-transparent:hover {
   border-color: transparent;
 }
@@ -1134,6 +1135,11 @@ video {
 .hover\:bg-primary-blue_xlight:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(241 245 254 / var(--tw-bg-opacity, 1));
+}
+
+.hover\:text-primary-blue:hover {
+  --tw-text-opacity: 1;
+  color: rgb(28 88 238 / var(--tw-text-opacity, 1));
 }
 
 .hover\:text-white:hover {
