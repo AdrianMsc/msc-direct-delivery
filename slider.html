@@ -376,9 +376,10 @@
 
       function getResponsiveLimit() {
         const width = window.innerWidth;
-        if (width < 768) return 3; // mobile: 3 por página
-        if (width < 1024) return 4; // tablet: 4 por página
-        return 6; // desktop: 6 por página
+        if (width < 640) return articles.length; // mobile: todos visibles
+        if (width < 768) return 3; // sm
+        if (width < 1024) return 4; // md
+        return 6; // lg y más
       }
 
       function updatePagination() {
@@ -386,8 +387,8 @@
         itemsPerPage = getResponsiveLimit();
         totalPages = Math.ceil(articles.length / itemsPerPage);
 
-        // Oculta el paginador si es mobile
-        if (width < 768) {
+        // Mostrar/ocultar paginador según tamaño
+        if (width < 640) {
           paginationWrapper.classList.add("hidden");
         } else {
           paginationWrapper.classList.remove("hidden");
@@ -399,7 +400,7 @@
         const start = currentPage * itemsPerPage;
         const end = start + itemsPerPage;
 
-        // Aplica visibilidad estrictamente
+        // Visibilidad exacta
         articles.forEach((article, i) => {
           if (i >= start && i < end) {
             article.classList.remove("hidden");
@@ -408,7 +409,7 @@
           }
         });
 
-        // Indicadores
+        // Indicadores de paginación
         indicators.innerHTML = "";
         for (let i = 0; i < totalPages; i++) {
           const dot = document.createElement("div");
