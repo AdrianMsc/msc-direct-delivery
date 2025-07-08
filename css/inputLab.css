@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#icon-bigbook {
+  position: fixed;
+  top: 24%;
+  left: 0;
+  z-index: 29;
+  cursor: pointer;
+}
+
+#icon-contact-us {
+  position: fixed;
+  top: 24%;
+  right: -256px;
+  transition: 0.3s all ease;
+  cursor: pointer;
+  z-index: 35;
+}

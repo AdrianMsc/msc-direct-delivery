@@ -600,6 +600,14 @@ video {
   position: relative;
 }
 
+.-left-2 {
+  left: -0.5rem;
+}
+
+.-right-2 {
+  right: -0.5rem;
+}
+
 .left-0 {
   left: 0px;
 }
@@ -644,6 +652,10 @@ video {
 
 .mb-4 {
   margin-bottom: 1rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
 }
 
 .ml-2 {
@@ -889,11 +901,6 @@ video {
   border-top-right-radius: 0.25rem;
 }
 
-.rounded-b {
-  border-bottom-right-radius: 0.25rem;
-  border-bottom-left-radius: 0.25rem;
-}
-
 .border {
   border-width: 1px;
 }
@@ -1017,6 +1024,11 @@ video {
   padding: 1.5rem;
 }
 
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -1062,6 +1074,14 @@ video {
 
 .pb-3 {
   padding-bottom: 0.75rem;
+}
+
+.pb-4 {
+  padding-bottom: 1rem;
+}
+
+.pb-6 {
+  padding-bottom: 1.5rem;
 }
 
 .pr-4 {
@@ -1156,10 +1176,6 @@ video {
   opacity: 0;
 }
 
-.opacity-50 {
-  opacity: 0.5;
-}
-
 .shadow-\[-4px_0px_5px_0px_rgba\(0\2c 0\2c 0\2c 0\.25\)\] {
   --tw-shadow: -4px 0px 5px 0px rgba(0,0,0,0.25);
   --tw-shadow-colored: -4px 0px 5px 0px var(--tw-shadow-color);
@@ -1194,6 +1210,23 @@ video {
   transition-duration: 300ms;
 }
 
+#icon-bigbook {
+  position: fixed;
+  top: 24%;
+  left: 0;
+  z-index: 29;
+  cursor: pointer;
+}
+
+#icon-contact-us {
+  position: fixed;
+  top: 24%;
+  right: -256px;
+  transition: 0.3s all ease;
+  cursor: pointer;
+  z-index: 35;
+}
+
 .after\:order-2::after {
   content: var(--tw-content);
   order: 2;
@@ -1218,10 +1251,6 @@ video {
   content: var(--tw-content);
   --tw-bg-opacity: 1;
   background-color: rgb(219 219 219 / var(--tw-bg-opacity, 1));
-}
-
-.hover\:border:hover {
-  border-width: 1px;
 }
 
 .hover\:border-2:hover {
@@ -1422,10 +1451,6 @@ video {
     align-items: center;
   }
 
-  .md\:items-baseline {
-    align-items: baseline;
-  }
-
   .md\:gap-4 {
     gap: 1rem;
   }
@@ -1447,6 +1472,10 @@ video {
 
   .lg\:block {
     display: block;
+  }
+
+  .lg\:inline-block {
+    display: inline-block;
   }
 
   .lg\:flex {
@@ -1483,6 +1512,11 @@ video {
 
   .lg\:items-center {
     align-items: center;
+  }
+
+  .lg\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 }
 
