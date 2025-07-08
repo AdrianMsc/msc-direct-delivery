@@ -1367,40 +1367,43 @@
 
     <script type="module">
       document.addEventListener("DOMContentLoaded", () => {
-        const scrollContainer = document.querySelector(
-          "section > div.overflow-x-scroll"
-        );
-        const btnLeft = document.querySelector("button.scroll-left");
-        const btnRight = document.querySelector("button.scroll-right");
+        const scrollSections = document.querySelectorAll("section.group");
 
-        const updateButtonStates = () => {
-          const maxScrollLeft =
-            scrollContainer.scrollWidth - scrollContainer.clientWidth;
+        scrollSections.forEach((section) => {
+          const scrollContainer = section.querySelector(
+            "div.overflow-x-scroll"
+          );
+          const btnLeft = section.querySelector("button.scroll-left");
+          const btnRight = section.querySelector("button.scroll-right");
 
-          if (scrollContainer.scrollLeft <= 0) {
-            btnLeft.classList.add("opacity-50", "pointer-events-none");
-          } else {
-            btnLeft.classList.remove("opacity-50", "pointer-events-none");
-          }
+          const updateButtonStates = () => {
+            const maxScrollLeft =
+              scrollContainer.scrollWidth - scrollContainer.clientWidth;
 
-          if (scrollContainer.scrollLeft >= maxScrollLeft - 1) {
-            btnRight.classList.add("opacity-50", "pointer-events-none");
-          } else {
-            btnRight.classList.remove("opacity-50", "pointer-events-none");
-          }
-        };
+            if (scrollContainer.scrollLeft <= 0) {
+              btnLeft.classList.add("opacity-50", "pointer-events-none");
+            } else {
+              btnLeft.classList.remove("opacity-50", "pointer-events-none");
+            }
 
-        const scrollByAmount = (amount) => {
-          scrollContainer.scrollBy({ left: amount, behavior: "smooth" });
-        };
+            if (scrollContainer.scrollLeft >= maxScrollLeft - 1) {
+              btnRight.classList.add("opacity-50", "pointer-events-none");
+            } else {
+              btnRight.classList.remove("opacity-50", "pointer-events-none");
+            }
+          };
 
-        // Scroll listeners
-        btnLeft.addEventListener("click", () => scrollByAmount(-300));
-        btnRight.addEventListener("click", () => scrollByAmount(300));
-        scrollContainer.addEventListener("scroll", updateButtonStates);
+          const scrollByAmount = (amount) => {
+            scrollContainer.scrollBy({ left: amount, behavior: "smooth" });
+          };
 
-        // Initialize
-        updateButtonStates();
+          btnLeft?.addEventListener("click", () => scrollByAmount(-300));
+          btnRight?.addEventListener("click", () => scrollByAmount(300));
+          scrollContainer?.addEventListener("scroll", updateButtonStates);
+
+          // Inicializar estado de botones
+          updateButtonStates();
+        });
       });
     </script>
 
