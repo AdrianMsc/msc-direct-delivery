@@ -2,7 +2,7 @@
 const colors = require("./utilities/colors");
 
 module.exports = {
-  content: ["./slider.html"],
+  content: ["./slider.html", "./slider-alt.html"],
   theme: {
     extend: {
       colors,
