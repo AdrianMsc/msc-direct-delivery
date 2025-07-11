@@ -2,6 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .custom-scroll::-webkit-scrollbar {
+    height: 8px;
+  }
+
+  .custom-scroll:not(:hover)::-webkit-scrollbar {
+    display: none;
+  }
+
+  .custom-scroll {
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: rgba(0, 0, 0, 0.4) transparent;
+  }
+
+  .custom-scroll:not(:hover) {
+    scrollbar-color: transparent transparent;
+  }
+}
+
 #icon-bigbook {
   position: fixed;
   top: 24%;

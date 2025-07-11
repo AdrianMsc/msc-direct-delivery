@@ -592,6 +592,10 @@ video {
   pointer-events: none;
 }
 
+.visible {
+  visibility: visible;
+}
+
 .absolute {
   position: absolute;
 }
@@ -677,6 +681,10 @@ video {
 
 .mr-2 {
   margin-right: 0.5rem;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
 }
 
 .mt-4 {
@@ -873,6 +881,10 @@ video {
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
 }
 
 .overflow-x-scroll {
@@ -1144,14 +1156,14 @@ video {
   color: rgb(0 0 0 / var(--tw-text-opacity, 1));
 }
 
+.text-gray-500 {
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity, 1));
+}
+
 .text-monochromes-grey {
   --tw-text-opacity: 1;
   color: rgb(113 113 113 / var(--tw-text-opacity, 1));
-}
-
-.text-monochromes-main {
-  --tw-text-opacity: 1;
-  color: rgb(33 33 33 / var(--tw-text-opacity, 1));
 }
 
 .text-primary-blue {
@@ -1172,11 +1184,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
-}
-
-.text-gray-500 {
-  --tw-text-opacity: 1;
-  color: rgb(107 114 128 / var(--tw-text-opacity, 1));
 }
 
 .underline {
@@ -1219,6 +1226,24 @@ video {
 
 .duration-300 {
   transition-duration: 300ms;
+}
+
+.custom-scroll::-webkit-scrollbar {
+  height: 8px;
+}
+
+.custom-scroll:not(:hover)::-webkit-scrollbar {
+  display: none;
+}
+
+.custom-scroll {
+  scrollbar-width: thin;
+  /* Firefox */
+  scrollbar-color: rgba(0, 0, 0, 0.4) transparent;
+}
+
+.custom-scroll:not(:hover) {
+  scrollbar-color: transparent transparent;
 }
 
 #icon-bigbook {
