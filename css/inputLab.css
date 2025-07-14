@@ -32,8 +32,9 @@
 #icon-contact-us {
   position: fixed;
   top: 24%;
-  right: -256px;
+  right: 0;
   transition: 0.3s all ease;
   cursor: pointer;
   z-index: 35;
+  height: auto;
 }

@@ -592,10 +592,6 @@ video {
   pointer-events: none;
 }
 
-.visible {
-  visibility: visible;
-}
-
 .absolute {
   position: absolute;
 }
@@ -881,10 +877,6 @@ video {
 
 .overflow-hidden {
   overflow: hidden;
-}
-
-.overflow-x-hidden {
-  overflow-x: hidden;
 }
 
 .overflow-x-scroll {
@@ -1257,10 +1249,11 @@ video {
 #icon-contact-us {
   position: fixed;
   top: 24%;
-  right: -256px;
+  right: 0;
   transition: 0.3s all ease;
   cursor: pointer;
   z-index: 35;
+  height: auto;
 }
 
 .after\:order-2::after {
