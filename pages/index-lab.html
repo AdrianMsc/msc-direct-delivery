@@ -1209,7 +1209,7 @@
       </div>
     </section>
 
-    <section class="mx-auto max-w-screen-2xl flex flex-col px-10 xl:px-0">
+    <section class="mx-auto max-w-screen-2xl flex flex-col px-10 2xl:px-0">
       <div
         class="flex pt-4 items-center after:flex-1 after:bg-monochromes-grey_xlight after:h-[1px] mb-4"
       >
@@ -1525,7 +1525,6 @@
 
     <script type="module">
       document.addEventListener("DOMContentLoaded", () => {
-        // Se seleccionan secciones que contienen scroll horizontal
         const scrollContainers = document.querySelectorAll(
           "div.overflow-x-scroll"
         );
@@ -1542,7 +1541,6 @@
             const maxScrollLeft =
               scrollContainer.scrollWidth - scrollContainer.clientWidth;
 
-            // Si el contenedor pertenece a section.group, aplica lógica de esconder flechas
             const shouldHide = parent.classList.contains("group");
 
             if (btnLeft) {
@@ -1587,60 +1585,6 @@
         });
       });
     </script>
-
-    <!-- <script type="module">
-      document.addEventListener("DOMContentLoaded", () => {
-        const scrollSections = document.querySelectorAll("section.group");
-
-        scrollSections.forEach((section) => {
-          const scrollContainer = section.querySelector(
-            "div.overflow-x-scroll"
-          );
-          const btnLeft = section.querySelector("button.scroll-left");
-          const btnRight = section.querySelector("button.scroll-right");
-
-          const updateButtonStates = () => {
-            const maxScrollLeft =
-              scrollContainer.scrollWidth - scrollContainer.clientWidth;
-
-            if (scrollContainer.scrollLeft <= 0) {
-              btnLeft.classList.add("opacity-0", "pointer-events-none");
-            } else {
-              btnLeft.classList.remove("opacity-0", "pointer-events-none");
-            }
-
-            if (scrollContainer.scrollLeft >= maxScrollLeft - 1) {
-              btnRight.classList.add("opacity-0", "pointer-events-none");
-            } else {
-              btnRight.classList.remove("opacity-0", "pointer-events-none");
-            }
-          };
-
-          const scrollByAmount = (amount) => {
-            scrollContainer.scrollBy({ left: amount, behavior: "smooth" });
-          };
-
-          btnLeft?.addEventListener("click", () => scrollByAmount(-300));
-          btnRight?.addEventListener("click", () => scrollByAmount(300));
-          scrollContainer?.addEventListener("scroll", updateButtonStates);
-
-          // Inicializar estado de botones
-          updateButtonStates();
-
-          scrollContainer?.addEventListener("mouseenter", () => {
-            // Si no hay scroll, no hacemos nada
-            if (scrollContainer.scrollWidth <= scrollContainer.clientWidth)
-              return;
-
-            const originalScroll = scrollContainer.scrollLeft;
-
-            // Forzamos scroll y lo regresamos
-            scrollContainer.scrollLeft += 1;
-            scrollContainer.scrollLeft = originalScroll;
-          });
-        });
-      });
-    </script> -->
 
     <!-- SCRIPTS -->
     <script src="../utilities/index.js"></script>
