@@ -483,7 +483,7 @@
     </style>
   </head>
 
-  <body class="relative">
+  <body class="relative bg-[#f2f2f2]">
     <button
       class="bottom_chat_btn"
       style="display: inline-block; bottom: 10px"
@@ -495,7 +495,7 @@
     <a name="top"></a>
     <div id="__next">
       <!-- sticky nav -->
-      <div id="product-sticky" class="print-display">
+      <div id="product-sticky" class="print-display hidden">
         <!-- mini details-->
         <div
           id="product-sticky-details"
@@ -3137,7 +3137,7 @@
         })();
       </script>
 
-      <div
+      <!-- <div
         class="pdp-print-none px-5 md:px-6 ipadfix:px-8 2xl:px-10 3xl:px-15 bg-primary-blue-xlight"
       >
         <div class="py-3">
@@ -3169,24 +3169,2749 @@
             </button>
           </div>
         </div>
+      </div>   -->
+
+      <!-- OMER'S FREE SHIP bar -->
+      <div
+        class="bg-[#F1F5FE] py-2 px-5 text-center border border-primary-blue_light"
+      >
+        <p>
+          Free Ground Shipping on orders over <strong>$99</strong> - Online Only
+          Enter Code <strong>MW99</strong>
+          <span class="text-primary-blue font-bold"> Click to Apply </span>
+        </p>
       </div>
       <main class="h-auto overflow-x-hidden">
         <div class="md:mx-5 lg:mx-6 xl:mx-8 2xl:mx-10 3xl:mx-14">
           <!-- omer's team CSS here -->
           <style>
             /* all necessary css code here from complied tailwind css file */
+
+            .container {
+              width: 100%;
+            }
+
+            @media (min-width: 640px) {
+              .container {
+                max-width: 640px;
+              }
+            }
+
+            @media (min-width: 768px) {
+              .container {
+                max-width: 768px;
+              }
+            }
+
+            @media (min-width: 1024px) {
+              .container {
+                max-width: 1024px;
+              }
+            }
+
+            @media (min-width: 1280px) {
+              .container {
+                max-width: 1280px;
+              }
+            }
+
+            @media (min-width: 1536px) {
+              .container {
+                max-width: 1536px;
+              }
+            }
+
+            .pointer-events-none {
+              pointer-events: none;
+            }
+
+            .absolute {
+              position: absolute;
+            }
+
+            .relative {
+              position: relative;
+            }
+
+            .-left-2 {
+              left: -0.5rem;
+            }
+
+            .-right-2 {
+              right: -0.5rem;
+            }
+
+            .left-0 {
+              left: 0px;
+            }
+
+            .right-0 {
+              right: 0px;
+            }
+
+            .top-0 {
+              top: 0px;
+            }
+
+            .z-10 {
+              z-index: 10;
+            }
+
+            .order-1 {
+              order: 1;
+            }
+
+            .order-2 {
+              order: 2;
+            }
+
+            .order-3 {
+              order: 3;
+            }
+
+            .mx-auto {
+              margin-left: auto;
+              margin-right: auto;
+            }
+
+            .my-4 {
+              margin-top: 1rem;
+              margin-bottom: 1rem;
+            }
+
+            .my-6 {
+              margin-top: 1.5rem;
+              margin-bottom: 1.5rem;
+            }
+
+            .mb-2 {
+              margin-bottom: 0.5rem;
+            }
+
+            .mb-4 {
+              margin-bottom: 1rem;
+            }
+
+            .mb-6 {
+              margin-bottom: 1.5rem;
+            }
+
+            .ml-2 {
+              margin-left: 0.5rem;
+            }
+
+            .ml-4 {
+              margin-left: 1rem;
+            }
+
+            .ml-auto {
+              margin-left: auto;
+            }
+
+            .mr-2 {
+              margin-right: 0.5rem;
+            }
+
+            .mt-3 {
+              margin-top: 0.75rem;
+            }
+
+            .mt-4 {
+              margin-top: 1rem;
+            }
+
+            .mt-auto {
+              margin-top: auto;
+            }
+
+            .ml-6 {
+              margin-left: 1.5rem;
+            }
+
+            .block {
+              display: block;
+            }
+
+            .flex {
+              display: flex;
+            }
+
+            .grid {
+              display: grid;
+            }
+
+            .\!hidden {
+              display: none !important;
+            }
+
+            .hidden {
+              display: none;
+            }
+
+            .size-10 {
+              width: 2.5rem;
+              height: 2.5rem;
+            }
+
+            .h-32 {
+              height: 8rem;
+            }
+
+            .h-7 {
+              height: 1.75rem;
+            }
+
+            .h-\[140px\] {
+              height: 140px;
+            }
+
+            .h-\[200px\] {
+              height: 200px;
+            }
+
+            .h-\[6px\] {
+              height: 6px;
+            }
+
+            .h-\[88px\] {
+              height: 88px;
+            }
+
+            .h-fit {
+              height: -moz-fit-content;
+              height: fit-content;
+            }
+
+            .h-full {
+              height: 100%;
+            }
+
+            .min-h-52 {
+              min-height: 13rem;
+            }
+
+            .min-h-full {
+              min-height: 100%;
+            }
+
+            .w-16 {
+              width: 4rem;
+            }
+
+            .w-3 {
+              width: 0.75rem;
+            }
+
+            .w-6 {
+              width: 1.5rem;
+            }
+
+            .w-6\/12 {
+              width: 50%;
+            }
+
+            .w-9 {
+              width: 2.25rem;
+            }
+
+            .w-\[184px\] {
+              width: 184px;
+            }
+
+            .w-auto {
+              width: auto;
+            }
+
+            .w-fit {
+              width: -moz-fit-content;
+              width: fit-content;
+            }
+
+            .w-full {
+              width: 100%;
+            }
+
+            .w-screen {
+              width: 100vw;
+            }
+
+            .min-w-24 {
+              min-width: 6rem;
+            }
+
+            .max-w-\[235px\] {
+              max-width: 235px;
+            }
+
+            .max-w-screen-2xl {
+              max-width: 1536px;
+            }
+
+            .rotate-180 {
+              --tw-rotate: 180deg;
+              transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+                rotate(var(--tw-rotate)) skewX(var(--tw-skew-x))
+                skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))
+                scaleY(var(--tw-scale-y));
+            }
+
+            .cursor-pointer {
+              cursor: pointer;
+            }
+
+            .resize {
+              resize: both;
+            }
+
+            .grid-cols-1 {
+              grid-template-columns: repeat(1, minmax(0, 1fr));
+            }
+
+            .flex-row {
+              flex-direction: row;
+            }
+
+            .flex-col {
+              flex-direction: column;
+            }
+
+            .flex-wrap {
+              flex-wrap: wrap;
+            }
+
+            .items-start {
+              align-items: flex-start;
+            }
+
+            .items-center {
+              align-items: center;
+            }
+
+            .justify-center {
+              justify-content: center;
+            }
+
+            .justify-between {
+              justify-content: space-between;
+            }
+
+            .gap-1 {
+              gap: 0.25rem;
+            }
+
+            .gap-2 {
+              gap: 0.5rem;
+            }
+
+            .gap-3 {
+              gap: 0.75rem;
+            }
+
+            .gap-4 {
+              gap: 1rem;
+            }
+
+            .gap-6 {
+              gap: 1.5rem;
+            }
+
+            .overflow-hidden {
+              overflow: hidden;
+            }
+
+            .overflow-x-auto {
+              overflow-x: auto;
+            }
+
+            .overflow-x-scroll {
+              overflow-x: scroll;
+            }
+
+            .text-nowrap {
+              text-wrap: nowrap;
+            }
+
+            .rounded {
+              border-radius: 0.25rem;
+            }
+
+            .rounded-full {
+              border-radius: 9999px;
+            }
+
+            .rounded-l {
+              border-top-left-radius: 0.25rem;
+              border-bottom-left-radius: 0.25rem;
+            }
+
+            .rounded-r {
+              border-top-right-radius: 0.25rem;
+              border-bottom-right-radius: 0.25rem;
+            }
+
+            .rounded-t {
+              border-top-left-radius: 0.25rem;
+              border-top-right-radius: 0.25rem;
+            }
+
+            .border {
+              border-width: 1px;
+            }
+
+            .border-b {
+              border-bottom-width: 1px;
+            }
+
+            .border-l {
+              border-left-width: 1px;
+            }
+
+            .border-r {
+              border-right-width: 1px;
+            }
+
+            .border-t {
+              border-top-width: 1px;
+            }
+
+            .border-monochromes-grey_xlight {
+              --tw-border-opacity: 1;
+              border-color: rgb(219 219 219 / var(--tw-border-opacity, 1));
+            }
+
+            .border-primary-blue {
+              --tw-border-opacity: 1;
+              border-color: rgb(28 88 238 / var(--tw-border-opacity, 1));
+            }
+
+            .border-primary-blue_dark {
+              --tw-border-opacity: 1;
+              border-color: rgb(13 58 169 / var(--tw-border-opacity, 1));
+            }
+
+            .border-primary-blue_light {
+              --tw-border-opacity: 1;
+              border-color: rgb(179 199 249 / var(--tw-border-opacity, 1));
+            }
+
+            .border-b-monochromes-grey_xlight {
+              --tw-border-opacity: 1;
+              border-bottom-color: rgb(
+                219 219 219 / var(--tw-border-opacity, 1)
+              );
+            }
+
+            .border-l-white {
+              --tw-border-opacity: 1;
+              border-left-color: rgb(255 255 255 / var(--tw-border-opacity, 1));
+            }
+
+            .border-r-monochromes-grey_xlight {
+              --tw-border-opacity: 1;
+              border-right-color: rgb(
+                219 219 219 / var(--tw-border-opacity, 1)
+              );
+            }
+
+            .border-t-white {
+              --tw-border-opacity: 1;
+              border-top-color: rgb(255 255 255 / var(--tw-border-opacity, 1));
+            }
+
+            .bg-\[\#F1F5FE\] {
+              --tw-bg-opacity: 1;
+              background-color: rgb(241 245 254 / var(--tw-bg-opacity, 1));
+            }
+
+            .bg-\[\#f2f2f2\] {
+              --tw-bg-opacity: 1;
+              background-color: rgb(242 242 242 / var(--tw-bg-opacity, 1));
+            }
+
+            .bg-blue-100 {
+              --tw-bg-opacity: 1;
+              background-color: rgb(219 234 254 / var(--tw-bg-opacity, 1));
+            }
+
+            .bg-monochromes-grey_xlight {
+              --tw-bg-opacity: 1;
+              background-color: rgb(219 219 219 / var(--tw-bg-opacity, 1));
+            }
+
+            .bg-primary-blue {
+              --tw-bg-opacity: 1;
+              background-color: rgb(28 88 238 / var(--tw-bg-opacity, 1));
+            }
+
+            .bg-transparent {
+              background-color: transparent;
+            }
+
+            .bg-white {
+              --tw-bg-opacity: 1;
+              background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+            }
+
+            .bg-red-500 {
+              --tw-bg-opacity: 1;
+              background-color: rgb(239 68 68 / var(--tw-bg-opacity, 1));
+            }
+
+            .fill-primary-blue {
+              fill: #1c58ee;
+            }
+
+            .object-cover {
+              -o-object-fit: cover;
+              object-fit: cover;
+            }
+
+            .p-2 {
+              padding: 0.5rem;
+            }
+
+            .p-3 {
+              padding: 0.75rem;
+            }
+
+            .p-4 {
+              padding: 1rem;
+            }
+
+            .p-5 {
+              padding: 1.25rem;
+            }
+
+            .p-6 {
+              padding: 1.5rem;
+            }
+
+            .px-10 {
+              padding-left: 2.5rem;
+              padding-right: 2.5rem;
+            }
+
+            .px-2 {
+              padding-left: 0.5rem;
+              padding-right: 0.5rem;
+            }
+
+            .px-4 {
+              padding-left: 1rem;
+              padding-right: 1rem;
+            }
+
+            .px-5 {
+              padding-left: 1.25rem;
+              padding-right: 1.25rem;
+            }
+
+            .py-1 {
+              padding-top: 0.25rem;
+              padding-bottom: 0.25rem;
+            }
+
+            .py-2 {
+              padding-top: 0.5rem;
+              padding-bottom: 0.5rem;
+            }
+
+            .py-3 {
+              padding-top: 0.75rem;
+              padding-bottom: 0.75rem;
+            }
+
+            .py-6 {
+              padding-top: 1.5rem;
+              padding-bottom: 1.5rem;
+            }
+
+            .pb-1 {
+              padding-bottom: 0.25rem;
+            }
+
+            .pb-2 {
+              padding-bottom: 0.5rem;
+            }
+
+            .pb-3 {
+              padding-bottom: 0.75rem;
+            }
+
+            .pb-4 {
+              padding-bottom: 1rem;
+            }
+
+            .pr-4 {
+              padding-right: 1rem;
+            }
+
+            .pt-1 {
+              padding-top: 0.25rem;
+            }
+
+            .pt-4 {
+              padding-top: 1rem;
+            }
+
+            .pt-6 {
+              padding-top: 1.5rem;
+            }
+
+            .pb-10 {
+              padding-bottom: 2.5rem;
+            }
+
+            .pt-3 {
+              padding-top: 0.75rem;
+            }
+
+            .pb-6 {
+              padding-bottom: 1.5rem;
+            }
+
+            .text-center {
+              text-align: center;
+            }
+
+            .text-2xl {
+              font-size: 1.5rem;
+              line-height: 2rem;
+            }
+
+            .text-base {
+              font-size: 1rem;
+              line-height: 1.5rem;
+            }
+
+            .text-lg {
+              font-size: 1.125rem;
+              line-height: 1.75rem;
+            }
+
+            .text-sm {
+              font-size: 0.875rem;
+              line-height: 1.25rem;
+            }
+
+            .text-xl {
+              font-size: 1.25rem;
+              line-height: 1.75rem;
+            }
+
+            .text-xs {
+              font-size: 0.75rem;
+              line-height: 1rem;
+            }
+
+            .font-bold {
+              font-weight: 700;
+            }
+
+            .text-black {
+              --tw-text-opacity: 1;
+              color: rgb(0 0 0 / var(--tw-text-opacity, 1));
+            }
+
+            .text-gray-500 {
+              --tw-text-opacity: 1;
+              color: rgb(107 114 128 / var(--tw-text-opacity, 1));
+            }
+
+            .text-monochromes-grey {
+              --tw-text-opacity: 1;
+              color: rgb(113 113 113 / var(--tw-text-opacity, 1));
+            }
+
+            .text-primary-blue {
+              --tw-text-opacity: 1;
+              color: rgb(28 88 238 / var(--tw-text-opacity, 1));
+            }
+
+            .text-primary-blue_dark {
+              --tw-text-opacity: 1;
+              color: rgb(13 58 169 / var(--tw-text-opacity, 1));
+            }
+
+            .text-primary-blue_xdark {
+              --tw-text-opacity: 1;
+              color: rgb(10 44 127 / var(--tw-text-opacity, 1));
+            }
+
+            .text-white {
+              --tw-text-opacity: 1;
+              color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+            }
+
+            .underline {
+              text-decoration-line: underline;
+            }
+
+            .opacity-0 {
+              opacity: 0;
+            }
+
+            .shadow-\[-4px_0px_5px_0px_rgba\(0\2c 0\2c 0\2c 0\.25\)\] {
+              --tw-shadow: -4px 0px 5px 0px rgba(0, 0, 0, 0.25);
+              --tw-shadow-colored: -4px 0px 5px 0px var(--tw-shadow-color);
+              box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+                var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+            }
+
+            .shadow-\[4px_0px_5px_0px_rgba\(0\2c 0\2c 0\2c 0\.25\)\] {
+              --tw-shadow: 4px 0px 5px 0px rgba(0, 0, 0, 0.25);
+              --tw-shadow-colored: 4px 0px 5px 0px var(--tw-shadow-color);
+              box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+                var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+            }
+
+            .shadow-md {
+              --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1),
+                0 2px 4px -2px rgb(0 0 0 / 0.1);
+              --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color),
+                0 2px 4px -2px var(--tw-shadow-color);
+              box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+                var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+            }
+
+            .transition-all {
+              transition-property: all;
+              transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+              transition-duration: 150ms;
+            }
+
+            .transition-opacity {
+              transition-property: opacity;
+              transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+              transition-duration: 150ms;
+            }
+
+            .duration-300 {
+              transition-duration: 300ms;
+            }
+
+            .custom-scroll::-webkit-scrollbar {
+              height: 8px;
+            }
+
+            .custom-scroll:not(:hover)::-webkit-scrollbar {
+              display: none;
+            }
+
+            .custom-scroll {
+              scrollbar-width: thin;
+              /* Firefox */
+              scrollbar-color: rgba(0, 0, 0, 0.4) transparent;
+            }
+
+            .custom-scroll:not(:hover) {
+              scrollbar-color: transparent transparent;
+            }
+
+            #icon-bigbook {
+              position: fixed;
+              top: 24%;
+              left: 0;
+              z-index: 29;
+              cursor: pointer;
+            }
+
+            #icon-contact-us {
+              position: fixed;
+              top: 24%;
+              right: 0;
+              transition: 0.3s all ease;
+              cursor: pointer;
+              z-index: 35;
+              height: auto;
+            }
+
+            .after\:order-2::after {
+              content: var(--tw-content);
+              order: 2;
+            }
+
+            .after\:hidden::after {
+              content: var(--tw-content);
+              display: none;
+            }
+
+            .after\:h-\[1px\]::after {
+              content: var(--tw-content);
+              height: 1px;
+            }
+
+            .after\:flex-1::after {
+              content: var(--tw-content);
+              flex: 1 1 0%;
+            }
+
+            .after\:bg-monochromes-grey_xlight::after {
+              content: var(--tw-content);
+              --tw-bg-opacity: 1;
+              background-color: rgb(219 219 219 / var(--tw-bg-opacity, 1));
+            }
+
+            .hover\:border-2:hover {
+              border-width: 2px;
+            }
+
+            .hover\:border-primary-blue:hover {
+              --tw-border-opacity: 1;
+              border-color: rgb(28 88 238 / var(--tw-border-opacity, 1));
+            }
+
+            .hover\:border-transparent:hover {
+              border-color: transparent;
+            }
+
+            .hover\:bg-primary-blue:hover {
+              --tw-bg-opacity: 1;
+              background-color: rgb(28 88 238 / var(--tw-bg-opacity, 1));
+            }
+
+            .hover\:bg-primary-blue_dark:hover {
+              --tw-bg-opacity: 1;
+              background-color: rgb(13 58 169 / var(--tw-bg-opacity, 1));
+            }
+
+            .hover\:bg-primary-blue_xlight:hover {
+              --tw-bg-opacity: 1;
+              background-color: rgb(241 245 254 / var(--tw-bg-opacity, 1));
+            }
+
+            .hover\:text-primary-blue:hover {
+              --tw-text-opacity: 1;
+              color: rgb(28 88 238 / var(--tw-text-opacity, 1));
+            }
+
+            .hover\:text-white:hover {
+              --tw-text-opacity: 1;
+              color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+            }
+
+            .hover\:shadow-xl:hover {
+              --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+                0 8px 10px -6px rgb(0 0 0 / 0.1);
+              --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color),
+                0 8px 10px -6px var(--tw-shadow-color);
+              box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+                var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+            }
+
+            .group:hover .group-hover\:pointer-events-auto {
+              pointer-events: auto;
+            }
+
+            .group:hover .group-hover\:opacity-100 {
+              opacity: 1;
+            }
+
+            @media (min-width: 640px) {
+              .sm\:order-1 {
+                order: 1;
+              }
+
+              .sm\:order-2 {
+                order: 2;
+              }
+
+              .sm\:order-3 {
+                order: 3;
+              }
+
+              .sm\:order-4 {
+                order: 4;
+              }
+
+              .sm\:mb-2 {
+                margin-bottom: 0.5rem;
+              }
+
+              .sm\:ml-0 {
+                margin-left: 0px;
+              }
+
+              .sm\:ml-2 {
+                margin-left: 0.5rem;
+              }
+
+              .sm\:mr-0 {
+                margin-right: 0px;
+              }
+
+              .sm\:mt-4 {
+                margin-top: 1rem;
+              }
+
+              .sm\:min-h-52 {
+                min-height: 13rem;
+              }
+
+              .sm\:w-4\/12 {
+                width: 33.333333%;
+              }
+
+              .sm\:w-6\/12 {
+                width: 50%;
+              }
+
+              .sm\:w-full {
+                width: 100%;
+              }
+
+              .sm\:basis-full {
+                flex-basis: 100%;
+              }
+
+              .sm\:grid-cols-2 {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+              }
+
+              .sm\:grid-cols-3 {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+              }
+
+              .sm\:flex-row {
+                flex-direction: row;
+              }
+
+              .sm\:flex-col {
+                flex-direction: column;
+              }
+
+              .sm\:flex-wrap {
+                flex-wrap: wrap;
+              }
+
+              .sm\:items-start {
+                align-items: flex-start;
+              }
+
+              .sm\:items-center {
+                align-items: center;
+              }
+
+              .sm\:justify-center {
+                justify-content: center;
+              }
+
+              .sm\:p-0 {
+                padding: 0px;
+              }
+
+              .sm\:p-3 {
+                padding: 0.75rem;
+              }
+
+              .sm\:py-0 {
+                padding-top: 0px;
+                padding-bottom: 0px;
+              }
+
+              .sm\:after\:order-2::after {
+                content: var(--tw-content);
+                order: 2;
+              }
+
+              .sm\:after\:block::after {
+                content: var(--tw-content);
+                display: block;
+              }
+            }
+
+            @media (min-width: 768px) {
+              .md\:flex {
+                display: flex;
+              }
+
+              .md\:w-4\/12 {
+                width: 33.333333%;
+              }
+
+              .md\:w-6\/12 {
+                width: 50%;
+              }
+
+              .md\:min-w-32 {
+                min-width: 8rem;
+              }
+
+              .md\:grid-cols-3 {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+              }
+
+              .md\:grid-cols-4 {
+                grid-template-columns: repeat(4, minmax(0, 1fr));
+              }
+
+              .md\:flex-row {
+                flex-direction: row;
+              }
+
+              .md\:items-center {
+                align-items: center;
+              }
+
+              .md\:gap-4 {
+                gap: 1rem;
+              }
+
+              .md\:px-5 {
+                padding-left: 1.25rem;
+                padding-right: 1.25rem;
+              }
+            }
+
+            @media (min-width: 1024px) {
+              .lg\:ml-auto {
+                margin-left: auto;
+              }
+
+              .lg\:mt-0 {
+                margin-top: 0px;
+              }
+
+              .lg\:block {
+                display: block;
+              }
+
+              .lg\:inline-block {
+                display: inline-block;
+              }
+
+              .lg\:flex {
+                display: flex;
+              }
+
+              .lg\:hidden {
+                display: none;
+              }
+
+              .lg\:w-2\/12 {
+                width: 16.666667%;
+              }
+
+              .lg\:w-4\/12 {
+                width: 33.333333%;
+              }
+
+              .lg\:w-full {
+                width: 100%;
+              }
+
+              .lg\:grid-cols-4 {
+                grid-template-columns: repeat(4, minmax(0, 1fr));
+              }
+
+              .lg\:grid-cols-6 {
+                grid-template-columns: repeat(6, minmax(0, 1fr));
+              }
+
+              .lg\:flex-row {
+                flex-direction: row;
+              }
+
+              .lg\:items-center {
+                align-items: center;
+              }
+
+              .lg\:px-6 {
+                padding-left: 1.5rem;
+                padding-right: 1.5rem;
+              }
+            }
+
+            @media (min-width: 1280px) {
+              .xl\:block {
+                display: block;
+              }
+            }
+
+            @media (min-width: 1536px) {
+              .\32xl\:px-0 {
+                padding-left: 0px;
+                padding-right: 0px;
+              }
+            }
           </style>
           <!-- // end omer's team CSS here -->
 
           <!-- place all HTML for new components here -->
-          Omer's team HTML here
+          <!-- <div
+            class="bg-[#F1F5FE] py-2 px-5 text-center border border-primary-blue_light"
+          >
+            <p>
+              Free Ground Shipping on orders over <strong>$99</strong> - Online
+              Only Enter Code <strong>MW99</strong>
+              <span class="text-primary-blue font-bold"> Click to Apply </span>
+            </p>
+          </div> -->
+
+          <section
+            class="max-w-screen-2xl items-center px-10 2xl:px-0 mx-auto gap-4 flex flex-col pb-4"
+          >
+            <!-- Category tags -->
+            <div class="flex flex-col pt-4 w-full h-fit gap-4 mx-auto">
+              <div
+                class="border border-primary-blue_light rounded w-full py-3 gap-3 h-fit flex flex-col"
+              >
+                <div class="flex flex-row justify-between px-4">
+                  <div
+                    class="flex flex-col items-start md:items-center gap-1 md:gap-4 md:flex-row"
+                  >
+                    <p class="font-bold text-xl">Top Categories for You</p>
+                    <p class="text-primary-blue_dark font-bold">
+                      View All Categories →
+                    </p>
+                  </div>
+                  <div class="flex-row gap-2 hidden md:flex">
+                    <button
+                      class="scroll-left flex items-center justify-center rounded-full bg-transparent size-10 shadow-md"
+                    >
+                      <img
+                        src="../assets/svg/chevron-r-1.png"
+                        class="rotate-180"
+                      />
+                    </button>
+                    <button
+                      class="scroll-right flex items-center justify-center rounded-full bg-white size-10 shadow-md"
+                    >
+                      <img src="../assets/svg/chevron-r-1.png" />
+                    </button>
+                  </div>
+                </div>
+
+                <div
+                  class="flex flex-row gap-3 overflow-x-scroll text-nowrap pb-3 ml-4 pr-4 text-sm custom-scroll"
+                >
+                  <button
+                    class="py-1 px-4 border border-primary-blue text-primary-blue rounded w-fit h-fit hover:text-white hover:bg-primary-blue cursor-pointer transition-all duration-300"
+                  >
+                    <p>Holemaking</p>
+                  </button>
+                  <button
+                    class="py-1 px-4 border border-primary-blue text-primary-blue rounded w-fit h-fit hover:text-white hover:bg-primary-blue cursor-pointer transition-all duration-300"
+                  >
+                    <p>Milling</p>
+                  </button>
+                  <button
+                    class="py-1 px-4 border border-primary-blue text-primary-blue rounded w-fit h-fit hover:text-white hover:bg-primary-blue cursor-pointer transition-all duration-300"
+                  >
+                    <p>Abrasives</p>
+                  </button>
+                  <button
+                    class="py-1 px-4 border border-primary-blue text-primary-blue rounded w-fit h-fit hover:text-white hover:bg-primary-blue cursor-pointer transition-all duration-300"
+                  >
+                    <p>Safety</p>
+                  </button>
+                  <button
+                    class="py-1 px-4 border border-primary-blue text-primary-blue rounded w-fit h-fit hover:text-white hover:bg-primary-blue cursor-pointer transition-all duration-300"
+                  >
+                    <p>Indexable Cutting Tools</p>
+                  </button>
+                  <button
+                    class="py-1 px-4 border border-primary-blue text-primary-blue rounded w-fit h-fit hover:text-white hover:bg-primary-blue cursor-pointer transition-all duration-300"
+                  >
+                    <p>Threading</p>
+                  </button>
+                  <button
+                    class="py-1 px-4 border border-primary-blue text-primary-blue rounded w-fit h-fit hover:text-white hover:bg-primary-blue cursor-pointer transition-all duration-300"
+                  >
+                    <p>Measuring & Inspecting</p>
+                  </button>
+                  <button
+                    class="py-1 px-4 border border-primary-blue text-primary-blue rounded w-fit h-fit hover:text-white hover:bg-primary-blue cursor-pointer transition-all duration-300"
+                  >
+                    <p>Hand Tools</p>
+                  </button>
+                  <button
+                    class="py-1 px-4 border border-primary-blue text-primary-blue rounded w-fit h-fit hover:text-white hover:bg-primary-blue cursor-pointer transition-all duration-300"
+                  >
+                    <p>Janitorial & Facility Maintenance</p>
+                  </button>
+                  <button
+                    class="py-1 px-4 border border-primary-blue text-primary-blue rounded w-fit h-fit hover:text-white hover:bg-primary-blue cursor-pointer transition-all duration-300"
+                  >
+                    <p>Fasteners</p>
+                  </button>
+                  <button
+                    class="py-1 px-4 border border-primary-blue text-primary-blue rounded w-fit h-fit hover:text-white hover:bg-primary-blue cursor-pointer transition-all duration-300"
+                  >
+                    <p>Threading</p>
+                  </button>
+
+                  <button
+                    class="py-1 px-4 border border-primary-blue text-primary-blue rounded w-fit h-fit hover:text-white hover:bg-primary-blue cursor-pointer transition-all duration-300"
+                  >
+                    <p>Measuring & Inspecting</p>
+                  </button>
+                  <button
+                    class="py-1 px-4 border border-primary-blue text-primary-blue rounded w-fit h-fit hover:text-white hover:bg-primary-blue cursor-pointer transition-all duration-300"
+                  >
+                    <p>Hand Tools</p>
+                  </button>
+                  <button
+                    class="py-1 px-4 border border-primary-blue text-primary-blue rounded w-fit h-fit hover:text-white hover:bg-primary-blue cursor-pointer transition-all duration-300"
+                  >
+                    <p>Janitorial & Facility Maintenance</p>
+                  </button>
+                  <button
+                    class="py-1 px-4 border border-primary-blue text-primary-blue rounded w-fit h-fit hover:text-white hover:bg-primary-blue cursor-pointer transition-all duration-300"
+                  >
+                    <p>Fasteners</p>
+                  </button>
+                  <button
+                    class="py-1 px-4 border border-primary-blue text-primary-blue rounded w-fit h-fit hover:text-white hover:bg-primary-blue cursor-pointer transition-all duration-300"
+                  >
+                    <p>Threading</p>
+                  </button>
+
+                  <button
+                    class="py-1 px-4 border border-primary-blue text-primary-blue rounded w-fit h-fit hover:text-white hover:bg-primary-blue cursor-pointer transition-all duration-300"
+                  >
+                    <p>Measuring & Inspecting</p>
+                  </button>
+                  <button
+                    class="py-1 px-4 border border-primary-blue text-primary-blue rounded w-fit h-fit hover:text-white hover:bg-primary-blue cursor-pointer transition-all duration-300"
+                  >
+                    <p>Hand Tools</p>
+                  </button>
+                  <button
+                    class="py-1 px-4 border border-primary-blue text-primary-blue rounded w-fit h-fit hover:text-white hover:bg-primary-blue cursor-pointer transition-all duration-300"
+                  >
+                    <p>Janitorial & Facility Maintenance</p>
+                  </button>
+                  <button
+                    class="py-1 px-4 border border-primary-blue text-primary-blue rounded w-fit h-fit hover:text-white hover:bg-primary-blue cursor-pointer transition-all duration-300"
+                  >
+                    <p>Fasteners</p>
+                  </button>
+                  <button
+                    class="py-1 px-4 border border-primary-blue text-primary-blue rounded w-fit h-fit hover:text-white hover:bg-primary-blue cursor-pointer transition-all duration-300"
+                  >
+                    <p>Threading</p>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex gap-4 w-full">
+              <picture>
+                <source
+                  media="(min-width:768px)"
+                  srcset="../assets/homepage/slider-ss-test-a.jpg"
+                />
+
+                <img
+                  src="../assets/homepage/slider-ss-test-dd.jpg"
+                  alt="Copy test image"
+                  class="w-full rounded"
+                />
+              </picture>
+
+              <picture>
+                <source
+                  media="(min-width:768px)"
+                  srcset="../assets/homepage/slider-ss-test-b.jpg"
+                />
+
+                <img
+                  src="../assets/homepage/slider-ss-test-c.jpg"
+                  alt="Copy test image"
+                  class="w-full rounded"
+                />
+              </picture>
+            </div>
+
+            <!-- Recently Viewed -->
+            <div
+              class="bg-white w-screen lg:w-full h-fit flex flex-col pt-4 pb-1 py-6 px-10 lg:px-6 gap-3 overflow-hidden rounded scroll-container"
+            >
+              <div class="flex flex-row justify-between items-center gap-4">
+                <h3 class="text-xl font-bold text-nowrap">Recently Viewed</h3>
+
+                <div
+                  class="border-b border-monochromes-grey_xlight w-full block"
+                ></div>
+              </div>
+
+              <section class="relative group">
+                <article
+                  class="absolute left-0 min-h-full items-center flex rounded-r z-10 opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-opacity duration-300"
+                >
+                  <button
+                    class="scroll-left bg-white w-9 h-32 flex items-center justify-center shadow-[4px_0px_5px_0px_rgba(0,0,0,0.25)] rounded-r -left-2 relative"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 320 512"
+                      class="w-3 fill-primary-blue"
+                    >
+                      <path
+                        d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"
+                      />
+                    </svg>
+                  </button>
+                </article>
+
+                <div
+                  class="flex flex-row justify-between gap-3 overflow-x-scroll group pb-4 relative custom-scroll"
+                >
+                  <!-- Item Card -->
+                  <article
+                    class="max-w-[235px] h-fit p-4 gap-1 border rounded border-gray hover:border-transparent hover:shadow-xl transition-all duration-300"
+                  >
+                    <div class="h-[88px] w-[184px] flex justify-center">
+                      <img
+                        src="../assets/homepage/drill.png"
+                        alt="Product Image"
+                        class="object-fit"
+                      />
+                    </div>
+
+                    <div
+                      class="flex flex-row justify-between items-center mt-3"
+                    >
+                      <p class="text-sm">Web Price</p>
+                      <p>
+                        <span class="font-bold text-lg">$293.17</span>
+                        <span class="text-gray-500">/ea</span>
+                      </p>
+                    </div>
+                    <p class="text-xs font-bold">DEWALT</p>
+                    <p class="text-sm font-bold">
+                      Power Tool Battery: 20V, Lithium-ion
+                    </p>
+                    <p class="text-sm pt-1 text-gray-500">MSC# 73659377</p>
+
+                    <button
+                      class="bg-primary-blue mt-3 text-white font-bold py-2 px-5 rounded-full w-full hover:bg-primary-blue_dark transition-all duration-300"
+                    >
+                      Add to Cart
+                    </button>
+                  </article>
+
+                  <article
+                    class="max-w-[235px] h-fit p-4 gap-1 border rounded border-gray hover:border-transparent hover:shadow-xl transition-all duration-300"
+                  >
+                    <div class="h-[88px] w-[184px] flex justify-center">
+                      <img
+                        src="../assets/homepage/gloves.png"
+                        alt="Product Image"
+                        class="object-fit"
+                      />
+                    </div>
+                    <div
+                      class="flex flex-row justify-between items-center mt-3"
+                    >
+                      <p class="text-sm">Web Price</p>
+                      <p>
+                        <span class="font-bold text-lg">$293.17</span>
+                        <span class="text-gray-500">/ea</span>
+                      </p>
+                    </div>
+                    <p class="text-xs font-bold">DEWALT</p>
+                    <p class="text-sm font-bold">
+                      Power Tool Battery: 20V, Lithium-ion
+                    </p>
+                    <p class="text-sm pt-1 text-gray-500">MSC# 73659377</p>
+
+                    <button
+                      class="bg-primary-blue mt-3 text-white font-bold py-2 px-5 rounded-full w-full hover:bg-primary-blue_dark transition-all duration-300"
+                    >
+                      Add to Cart
+                    </button>
+                  </article>
+
+                  <article
+                    class="max-w-[235px] h-fit p-4 gap-1 border rounded border-gray hover:border-transparent hover:shadow-xl transition-all duration-300"
+                  >
+                    <div class="h-[88px] w-[184px] flex justify-center">
+                      <img
+                        src="../assets/homepage/battery.png"
+                        alt="Product Image"
+                        class="object-fit"
+                      />
+                    </div>
+                    <div
+                      class="flex flex-row justify-between items-center mt-3"
+                    >
+                      <p class="text-sm">Web Price</p>
+                      <p>
+                        <span class="font-bold text-lg">$293.17</span>
+                        <span class="text-gray-500">/ea</span>
+                      </p>
+                    </div>
+                    <p class="text-xs font-bold">DEWALT</p>
+                    <p class="text-sm font-bold">
+                      Power Tool Battery: 20V, Lithium-ion
+                    </p>
+                    <p class="text-sm pt-1 text-gray-500">MSC# 73659377</p>
+
+                    <button
+                      class="bg-primary-blue mt-3 text-white font-bold py-2 px-5 rounded-full w-full hover:bg-primary-blue_dark transition-all duration-300"
+                    >
+                      Add to Cart
+                    </button>
+                  </article>
+
+                  <article
+                    class="max-w-[235px] h-fit p-4 gap-1 border rounded border-gray hover:border-transparent hover:shadow-xl transition-all duration-300"
+                  >
+                    <div class="h-[88px] w-[184px] flex justify-center">
+                      <img
+                        src="../assets/homepage/ac.png"
+                        alt="Product Image"
+                        class="object-fit"
+                      />
+                    </div>
+                    <div
+                      class="flex flex-row justify-between items-center mt-3"
+                    >
+                      <p class="text-sm">Web Price</p>
+                      <p>
+                        <span class="font-bold text-lg">$293.17</span>
+                        <span class="text-gray-500">/ea</span>
+                      </p>
+                    </div>
+                    <p class="text-xs font-bold">DEWALT</p>
+                    <p class="text-sm font-bold">
+                      Power Tool Battery: 20V, Lithium-ion
+                    </p>
+                    <p class="text-sm pt-1 text-gray-500">MSC# 73659377</p>
+
+                    <button
+                      class="bg-primary-blue mt-3 text-white font-bold py-2 px-5 rounded-full w-full hover:bg-primary-blue_dark transition-all duration-300"
+                    >
+                      Add to Cart
+                    </button>
+                  </article>
+
+                  <article
+                    class="max-w-[235px] h-fit p-4 gap-1 border rounded border-gray hover:border-transparent hover:shadow-xl transition-all duration-300 block"
+                  >
+                    <div class="h-[88px] w-[184px] flex justify-center">
+                      <img
+                        src="../assets/homepage/compresor.png"
+                        alt="Product Image"
+                        class="object-fit"
+                      />
+                    </div>
+                    <div
+                      class="flex flex-row justify-between items-center mt-3"
+                    >
+                      <p class="text-sm">Web Price</p>
+                      <p>
+                        <span class="font-bold text-lg">$293.17</span>
+                        <span class="text-gray-500">/ea</span>
+                      </p>
+                    </div>
+                    <p class="text-xs font-bold">DEWALT</p>
+                    <p class="text-sm font-bold">
+                      Power Tool Battery: 20V, Lithium-ion
+                    </p>
+                    <p class="text-sm pt-1 text-gray-500">MSC# 73659377</p>
+
+                    <button
+                      class="bg-primary-blue mt-3 text-white font-bold py-2 px-5 rounded-full w-full hover:bg-primary-blue_dark transition-all duration-300"
+                    >
+                      Add to Cart
+                    </button>
+                  </article>
+
+                  <article
+                    class="max-w-[235px] h-fit p-4 gap-1 border rounded border-gray hover:border-transparent hover:shadow-xl transition-all duration-300 block"
+                  >
+                    <div class="h-[88px] w-[184px] flex justify-center">
+                      <img
+                        src="../assets/homepage/battery2.png"
+                        alt="Product Image"
+                        class="object-fit"
+                      />
+                    </div>
+                    <div
+                      class="flex flex-row justify-between items-center mt-3"
+                    >
+                      <p class="text-sm">Web Price</p>
+                      <p>
+                        <span class="font-bold text-lg">$293.17</span>
+                        <span class="text-gray-500">/ea</span>
+                      </p>
+                    </div>
+                    <p class="text-xs font-bold">DEWALT</p>
+                    <p class="text-sm font-bold">
+                      Power Tool Battery: 20V, Lithium-ion
+                    </p>
+                    <p class="text-sm pt-1 text-gray-500">MSC# 73659377</p>
+
+                    <button
+                      class="bg-primary-blue mt-3 text-white font-bold py-2 px-5 rounded-full w-full hover:bg-primary-blue_dark transition-all duration-300"
+                    >
+                      Add to Cart
+                    </button>
+                  </article>
+
+                  <article
+                    class="max-w-[235px] h-fit p-4 gap-1 border rounded border-gray hover:border-transparent hover:shadow-xl transition-all duration-300 block"
+                  >
+                    <div class="h-[88px] w-[184px] flex justify-center">
+                      <img
+                        src="../assets/homepage/battery2.png"
+                        alt="Product Image"
+                        class="object-fit"
+                      />
+                    </div>
+                    <div
+                      class="flex flex-row justify-between items-center mt-3"
+                    >
+                      <p class="text-sm">Web Price</p>
+                      <p>
+                        <span class="font-bold text-lg">$293.17</span>
+                        <span class="text-gray-500">/ea</span>
+                      </p>
+                    </div>
+                    <p class="text-xs font-bold">DEWALT</p>
+                    <p class="text-sm font-bold">
+                      Power Tool Battery: 20V, Lithium-ion
+                    </p>
+                    <p class="text-sm pt-1 text-gray-500">MSC# 73659377</p>
+
+                    <button
+                      class="bg-primary-blue mt-3 text-white font-bold py-2 px-5 rounded-full w-full hover:bg-primary-blue_dark transition-all duration-300"
+                    >
+                      Add to Cart
+                    </button>
+                  </article>
+
+                  <article
+                    class="max-w-[235px] h-fit p-4 gap-1 border rounded border-gray hover:border-transparent hover:shadow-xl transition-all duration-300 block"
+                  >
+                    <div class="h-[88px] w-[184px] flex justify-center">
+                      <img
+                        src="../assets/homepage/battery2.png"
+                        alt="Product Image"
+                        class="object-fit"
+                      />
+                    </div>
+                    <div
+                      class="flex flex-row justify-between items-center mt-3"
+                    >
+                      <p class="text-sm">Web Price</p>
+                      <p>
+                        <span class="font-bold text-lg">$293.17</span>
+                        <span class="text-gray-500">/ea</span>
+                      </p>
+                    </div>
+                    <p class="text-xs font-bold">DEWALT</p>
+                    <p class="text-sm font-bold">
+                      Power Tool Battery: 20V, Lithium-ion
+                    </p>
+                    <p class="text-sm pt-1 text-gray-500">MSC# 73659377</p>
+
+                    <button
+                      class="bg-primary-blue mt-3 text-white font-bold py-2 px-5 rounded-full w-full hover:bg-primary-blue_dark transition-all duration-300"
+                    >
+                      Add to Cart
+                    </button>
+                  </article>
+
+                  <article
+                    class="max-w-[235px] h-fit p-4 gap-1 border rounded border-gray hover:border-transparent hover:shadow-xl transition-all duration-300 block"
+                  >
+                    <div class="h-[88px] w-[184px] flex justify-center">
+                      <img
+                        src="../assets/homepage/battery2.png"
+                        alt="Product Image"
+                        class="object-fit"
+                      />
+                    </div>
+                    <div
+                      class="flex flex-row justify-between items-center mt-3"
+                    >
+                      <p class="text-sm">Web Price</p>
+                      <p>
+                        <span class="font-bold text-lg">$293.17</span>
+                        <span class="text-gray-500">/ea</span>
+                      </p>
+                    </div>
+                    <p class="text-xs font-bold">DEWALT</p>
+                    <p class="text-sm font-bold">
+                      Power Tool Battery: 20V, Lithium-ion
+                    </p>
+                    <p class="text-sm pt-1 text-gray-500">MSC# 73659377</p>
+
+                    <button
+                      class="bg-primary-blue mt-3 text-white font-bold py-2 px-5 rounded-full w-full hover:bg-primary-blue_dark transition-all duration-300"
+                    >
+                      Add to Cart
+                    </button>
+                  </article>
+
+                  <article
+                    class="max-w-[235px] h-fit p-4 gap-1 border rounded border-gray hover:border-transparent hover:shadow-xl transition-all duration-300 block"
+                  >
+                    <div class="h-[88px] w-[184px] flex justify-center">
+                      <img
+                        src="../assets/homepage/battery2.png"
+                        alt="Product Image"
+                        class="object-fit"
+                      />
+                    </div>
+                    <div
+                      class="flex flex-row justify-between items-center mt-3"
+                    >
+                      <p class="text-sm">Web Price</p>
+                      <p>
+                        <span class="font-bold text-lg">$293.17</span>
+                        <span class="text-gray-500">/ea</span>
+                      </p>
+                    </div>
+                    <p class="text-xs font-bold">DEWALT</p>
+                    <p class="text-sm font-bold">
+                      Power Tool Battery: 20V, Lithium-ion
+                    </p>
+                    <p class="text-sm pt-1 text-gray-500">MSC# 73659377</p>
+
+                    <button
+                      class="bg-primary-blue mt-3 text-white font-bold py-2 px-5 rounded-full w-full hover:bg-primary-blue_dark transition-all duration-300"
+                    >
+                      Add to Cart
+                    </button>
+                  </article>
+
+                  <article
+                    class="max-w-[235px] h-fit p-4 gap-1 border rounded border-gray hover:border-transparent hover:shadow-xl transition-all duration-300 block"
+                  >
+                    <div class="h-[88px] w-[184px] flex justify-center">
+                      <img
+                        src="../assets/homepage/battery2.png"
+                        alt="Product Image"
+                        class="object-fit"
+                      />
+                    </div>
+                    <div
+                      class="flex flex-row justify-between items-center mt-3"
+                    >
+                      <p class="text-sm">Web Price</p>
+                      <p>
+                        <span class="font-bold text-lg">$293.17</span>
+                        <span class="text-gray-500">/ea</span>
+                      </p>
+                    </div>
+                    <p class="text-xs font-bold">DEWALT</p>
+                    <p class="text-sm font-bold">
+                      Power Tool Battery: 20V, Lithium-ion
+                    </p>
+                    <p class="text-sm pt-1 text-gray-500">MSC# 73659377</p>
+
+                    <button
+                      class="bg-primary-blue mt-3 text-white font-bold py-2 px-5 rounded-full w-full hover:bg-primary-blue_dark transition-all duration-300"
+                    >
+                      Add to Cart
+                    </button>
+                  </article>
+
+                  <article
+                    class="max-w-[235px] h-fit p-4 gap-1 border rounded border-gray hover:border-transparent hover:shadow-xl transition-all duration-300 block"
+                  >
+                    <div class="h-[88px] w-[184px] flex justify-center">
+                      <img
+                        src="../assets/homepage/battery2.png"
+                        alt="Product Image"
+                        class="object-fit"
+                      />
+                    </div>
+                    <div
+                      class="flex flex-row justify-between items-center mt-3"
+                    >
+                      <p class="text-sm">Web Price</p>
+                      <p>
+                        <span class="font-bold text-lg">$293.17</span>
+                        <span class="text-gray-500">/ea</span>
+                      </p>
+                    </div>
+                    <p class="text-xs font-bold">DEWALT</p>
+                    <p class="text-sm font-bold">
+                      Power Tool Battery: 20V, Lithium-ion
+                    </p>
+                    <p class="text-sm pt-1 text-gray-500">MSC# 73659377</p>
+
+                    <button
+                      class="bg-primary-blue mt-3 text-white font-bold py-2 px-5 rounded-full w-full hover:bg-primary-blue_dark transition-all duration-300"
+                    >
+                      Add to Cart
+                    </button>
+                  </article>
+                </div>
+
+                <article
+                  class="absolute right-0 top-0 min-h-full items-center flex rounded-l z-10 opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-opacity duration-300"
+                >
+                  <button
+                    class="scroll-right bg-white w-9 h-32 flex items-center justify-center shadow-[-4px_0px_5px_0px_rgba(0,0,0,0.25)] rounded-l -right-2 relative"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 320 512"
+                      class="w-3 fill-primary-blue rotate-180"
+                    >
+                      <path
+                        d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"
+                      />
+                    </svg>
+                  </button>
+                </article>
+              </section>
+            </div>
+
+            <!-- Best Sellers -->
+            <div
+              class="bg-white w-screen lg:w-full h-fit flex flex-col pt-4 pb-1 py-6 px-10 lg:px-6 gap-3 overflow-hidden rounded scroll-container"
+            >
+              <div class="flex flex-row justify-between items-center gap-4">
+                <h3 class="text-xl font-bold text-nowrap">Best Sellers</h3>
+
+                <div
+                  class="border-b border-monochromes-grey_xlight w-full block"
+                ></div>
+              </div>
+
+              <section class="relative group">
+                <article
+                  class="absolute left-0 min-h-full items-center flex rounded-r z-10 opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-opacity duration-300"
+                >
+                  <button
+                    class="scroll-left bg-white w-9 h-32 flex items-center justify-center shadow-[4px_0px_5px_0px_rgba(0,0,0,0.25)] rounded-r -left-2 relative"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 320 512"
+                      class="w-3 fill-primary-blue"
+                    >
+                      <path
+                        d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"
+                      />
+                    </svg>
+                  </button>
+                </article>
+
+                <div
+                  class="flex flex-row justify-between gap-3 overflow-x-scroll pb-4 relative custom-scroll"
+                >
+                  <!-- Item Card -->
+                  <article
+                    class="max-w-[235px] h-fit p-4 gap-1 border rounded border-gray hover:border-transparent hover:shadow-xl transition-all duration-300"
+                  >
+                    <div class="h-[88px] w-[184px] flex justify-center">
+                      <img
+                        src="../assets/homepage/drill.png"
+                        alt="Product Image"
+                        class="object-fit"
+                      />
+                    </div>
+                    <div
+                      class="flex flex-row justify-between items-center mt-3"
+                    >
+                      <p class="text-sm">Web Price</p>
+                      <p>
+                        <span class="font-bold text-lg">$293.17</span>
+                        <span class="text-gray-500">/ea</span>
+                      </p>
+                    </div>
+                    <p class="text-xs font-bold">DEWALT</p>
+                    <p class="text-sm font-bold">
+                      Power Tool Battery: 20V, Lithium-ion
+                    </p>
+                    <p class="text-sm pt-1 text-gray-500">MSC# 73659377</p>
+
+                    <button
+                      class="bg-primary-blue mt-3 text-white font-bold py-2 px-5 rounded-full w-full hover:bg-primary-blue_dark transition-all duration-300"
+                    >
+                      Add to Cart
+                    </button>
+                  </article>
+
+                  <article
+                    class="max-w-[235px] h-fit p-4 gap-1 border rounded border-gray hover:border-transparent hover:shadow-xl transition-all duration-300"
+                  >
+                    <div class="h-[88px] w-[184px] flex justify-center">
+                      <img
+                        src="../assets/homepage/gloves.png"
+                        alt="Product Image"
+                        class="object-fit"
+                      />
+                    </div>
+                    <div
+                      class="flex flex-row justify-between items-center mt-3"
+                    >
+                      <p class="text-sm">Web Price</p>
+                      <p>
+                        <span class="font-bold text-lg">$293.17</span>
+                        <span class="text-gray-500">/ea</span>
+                      </p>
+                    </div>
+                    <p class="text-xs font-bold">DEWALT</p>
+                    <p class="text-sm font-bold">
+                      Power Tool Battery: 20V, Lithium-ion
+                    </p>
+                    <p class="text-sm pt-1 text-gray-500">MSC# 73659377</p>
+
+                    <button
+                      class="bg-primary-blue mt-3 text-white font-bold py-2 px-5 rounded-full w-full hover:bg-primary-blue_dark transition-all duration-300"
+                    >
+                      Add to Cart
+                    </button>
+                  </article>
+
+                  <article
+                    class="max-w-[235px] h-fit p-4 gap-1 border rounded border-gray hover:border-transparent hover:shadow-xl transition-all duration-300"
+                  >
+                    <div class="h-[88px] w-[184px] flex justify-center">
+                      <img
+                        src="../assets/homepage/battery.png"
+                        alt="Product Image"
+                        class="object-fit"
+                      />
+                    </div>
+                    <div
+                      class="flex flex-row justify-between items-center mt-3"
+                    >
+                      <p class="text-sm">Web Price</p>
+                      <p>
+                        <span class="font-bold text-lg">$293.17</span>
+                        <span class="text-gray-500">/ea</span>
+                      </p>
+                    </div>
+                    <p class="text-xs font-bold">DEWALT</p>
+                    <p class="text-sm font-bold">
+                      Power Tool Battery: 20V, Lithium-ion
+                    </p>
+                    <p class="text-sm pt-1 text-gray-500">MSC# 73659377</p>
+
+                    <button
+                      class="bg-primary-blue mt-3 text-white font-bold py-2 px-5 rounded-full w-full hover:bg-primary-blue_dark transition-all duration-300"
+                    >
+                      Add to Cart
+                    </button>
+                  </article>
+
+                  <article
+                    class="max-w-[235px] h-fit p-4 gap-1 border rounded border-gray hover:border-transparent hover:shadow-xl transition-all duration-300"
+                  >
+                    <div class="h-[88px] w-[184px] flex justify-center">
+                      <img
+                        src="../assets/homepage/ac.png"
+                        alt="Product Image"
+                        class="object-fit"
+                      />
+                    </div>
+                    <div
+                      class="flex flex-row justify-between items-center mt-3"
+                    >
+                      <p class="text-sm">Web Price</p>
+                      <p>
+                        <span class="font-bold text-lg">$293.17</span>
+                        <span class="text-gray-500">/ea</span>
+                      </p>
+                    </div>
+                    <p class="text-xs font-bold">DEWALT</p>
+                    <p class="text-sm font-bold">
+                      Power Tool Battery: 20V, Lithium-ion
+                    </p>
+                    <p class="text-sm pt-1 text-gray-500">MSC# 73659377</p>
+
+                    <button
+                      class="bg-primary-blue mt-3 text-white font-bold py-2 px-5 rounded-full w-full hover:bg-primary-blue_dark transition-all duration-300"
+                    >
+                      Add to Cart
+                    </button>
+                  </article>
+
+                  <article
+                    class="max-w-[235px] h-fit p-4 gap-1 border rounded border-gray hover:border-transparent hover:shadow-xl transition-all duration-300 block"
+                  >
+                    <div class="h-[88px] w-[184px] flex justify-center">
+                      <img
+                        src="../assets/homepage/compresor.png"
+                        alt="Product Image"
+                        class="object-fit"
+                      />
+                    </div>
+                    <div
+                      class="flex flex-row justify-between items-center mt-3"
+                    >
+                      <p class="text-sm">Web Price</p>
+                      <p>
+                        <span class="font-bold text-lg">$293.17</span>
+                        <span class="text-gray-500">/ea</span>
+                      </p>
+                    </div>
+                    <p class="text-xs font-bold">DEWALT</p>
+                    <p class="text-sm font-bold">
+                      Power Tool Battery: 20V, Lithium-ion
+                    </p>
+                    <p class="text-sm pt-1 text-gray-500">MSC# 73659377</p>
+
+                    <button
+                      class="bg-primary-blue mt-3 text-white font-bold py-2 px-5 rounded-full w-full hover:bg-primary-blue_dark transition-all duration-300"
+                    >
+                      Add to Cart
+                    </button>
+                  </article>
+
+                  <article
+                    class="max-w-[235px] h-fit p-4 gap-1 border rounded border-gray hover:border-transparent hover:shadow-xl transition-all duration-300 block"
+                  >
+                    <div class="h-[88px] w-[184px] flex justify-center">
+                      <img
+                        src="../assets/homepage/battery2.png"
+                        alt="Product Image"
+                        class="object-fit"
+                      />
+                    </div>
+                    <div
+                      class="flex flex-row justify-between items-center mt-3"
+                    >
+                      <p class="text-sm">Web Price</p>
+                      <p>
+                        <span class="font-bold text-lg">$293.17</span>
+                        <span class="text-gray-500">/ea</span>
+                      </p>
+                    </div>
+                    <p class="text-xs font-bold">DEWALT</p>
+                    <p class="text-sm font-bold">
+                      Power Tool Battery: 20V, Lithium-ion
+                    </p>
+                    <p class="text-sm pt-1 text-gray-500">MSC# 73659377</p>
+
+                    <button
+                      class="bg-primary-blue mt-3 text-white font-bold py-2 px-5 rounded-full w-full hover:bg-primary-blue_dark transition-all duration-300"
+                    >
+                      Add to Cart
+                    </button>
+                  </article>
+
+                  <article
+                    class="max-w-[235px] h-fit p-4 gap-1 border rounded border-gray hover:border-transparent hover:shadow-xl transition-all duration-300 block"
+                  >
+                    <div class="h-[88px] w-[184px] flex justify-center">
+                      <img
+                        src="../assets/homepage/battery2.png"
+                        alt="Product Image"
+                        class="object-fit"
+                      />
+                    </div>
+                    <div
+                      class="flex flex-row justify-between items-center mt-3"
+                    >
+                      <p class="text-sm">Web Price</p>
+                      <p>
+                        <span class="font-bold text-lg">$293.17</span>
+                        <span class="text-gray-500">/ea</span>
+                      </p>
+                    </div>
+                    <p class="text-xs font-bold">DEWALT</p>
+                    <p class="text-sm font-bold">
+                      Power Tool Battery: 20V, Lithium-ion
+                    </p>
+                    <p class="text-sm pt-1 text-gray-500">MSC# 73659377</p>
+
+                    <button
+                      class="bg-primary-blue mt-3 text-white font-bold py-2 px-5 rounded-full w-full hover:bg-primary-blue_dark transition-all duration-300"
+                    >
+                      Add to Cart
+                    </button>
+                  </article>
+
+                  <article
+                    class="max-w-[235px] h-fit p-4 gap-1 border rounded border-gray hover:border-transparent hover:shadow-xl transition-all duration-300 block"
+                  >
+                    <div class="h-[88px] w-[184px] flex justify-center">
+                      <img
+                        src="../assets/homepage/battery2.png"
+                        alt="Product Image"
+                        class="object-fit"
+                      />
+                    </div>
+                    <div
+                      class="flex flex-row justify-between items-center mt-3"
+                    >
+                      <p class="text-sm">Web Price</p>
+                      <p>
+                        <span class="font-bold text-lg">$293.17</span>
+                        <span class="text-gray-500">/ea</span>
+                      </p>
+                    </div>
+                    <p class="text-xs font-bold">DEWALT</p>
+                    <p class="text-sm font-bold">
+                      Power Tool Battery: 20V, Lithium-ion
+                    </p>
+                    <p class="text-sm pt-1 text-gray-500">MSC# 73659377</p>
+
+                    <button
+                      class="bg-primary-blue mt-3 text-white font-bold py-2 px-5 rounded-full w-full hover:bg-primary-blue_dark transition-all duration-300"
+                    >
+                      Add to Cart
+                    </button>
+                  </article>
+
+                  <article
+                    class="max-w-[235px] h-fit p-4 gap-1 border rounded border-gray hover:border-transparent hover:shadow-xl transition-all duration-300 block"
+                  >
+                    <div class="h-[88px] w-[184px] flex justify-center">
+                      <img
+                        src="../assets/homepage/battery2.png"
+                        alt="Product Image"
+                        class="object-fit"
+                      />
+                    </div>
+                    <div
+                      class="flex flex-row justify-between items-center mt-3"
+                    >
+                      <p class="text-sm">Web Price</p>
+                      <p>
+                        <span class="font-bold text-lg">$293.17</span>
+                        <span class="text-gray-500">/ea</span>
+                      </p>
+                    </div>
+                    <p class="text-xs font-bold">DEWALT</p>
+                    <p class="text-sm font-bold">
+                      Power Tool Battery: 20V, Lithium-ion
+                    </p>
+                    <p class="text-sm pt-1 text-gray-500">MSC# 73659377</p>
+
+                    <button
+                      class="bg-primary-blue mt-3 text-white font-bold py-2 px-5 rounded-full w-full hover:bg-primary-blue_dark transition-all duration-300"
+                    >
+                      Add to Cart
+                    </button>
+                  </article>
+
+                  <article
+                    class="max-w-[235px] h-fit p-4 gap-1 border rounded border-gray hover:border-transparent hover:shadow-xl transition-all duration-300 block"
+                  >
+                    <div class="h-[88px] w-[184px] flex justify-center">
+                      <img
+                        src="../assets/homepage/battery2.png"
+                        alt="Product Image"
+                        class="object-fit"
+                      />
+                    </div>
+                    <div
+                      class="flex flex-row justify-between items-center mt-3"
+                    >
+                      <p class="text-sm">Web Price</p>
+                      <p>
+                        <span class="font-bold text-lg">$293.17</span>
+                        <span class="text-gray-500">/ea</span>
+                      </p>
+                    </div>
+                    <p class="text-xs font-bold">DEWALT</p>
+                    <p class="text-sm font-bold">
+                      Power Tool Battery: 20V, Lithium-ion
+                    </p>
+                    <p class="text-sm pt-1 text-gray-500">MSC# 73659377</p>
+
+                    <button
+                      class="bg-primary-blue mt-3 text-white font-bold py-2 px-5 rounded-full w-full hover:bg-primary-blue_dark transition-all duration-300"
+                    >
+                      Add to Cart
+                    </button>
+                  </article>
+
+                  <article
+                    class="max-w-[235px] h-fit p-4 gap-1 border rounded border-gray hover:border-transparent hover:shadow-xl transition-all duration-300 block"
+                  >
+                    <div class="h-[88px] w-[184px] flex justify-center">
+                      <img
+                        src="../assets/homepage/battery2.png"
+                        alt="Product Image"
+                        class="object-fit"
+                      />
+                    </div>
+                    <div
+                      class="flex flex-row justify-between items-center mt-3"
+                    >
+                      <p class="text-sm">Web Price</p>
+                      <p>
+                        <span class="font-bold text-lg">$293.17</span>
+                        <span class="text-gray-500">/ea</span>
+                      </p>
+                    </div>
+                    <p class="text-xs font-bold">DEWALT</p>
+                    <p class="text-sm font-bold">
+                      Power Tool Battery: 20V, Lithium-ion
+                    </p>
+                    <p class="text-sm pt-1 text-gray-500">MSC# 73659377</p>
+
+                    <button
+                      class="bg-primary-blue mt-3 text-white font-bold py-2 px-5 rounded-full w-full hover:bg-primary-blue_dark transition-all duration-300"
+                    >
+                      Add to Cart
+                    </button>
+                  </article>
+
+                  <article
+                    class="max-w-[235px] h-fit p-4 gap-1 border rounded border-gray hover:border-transparent hover:shadow-xl transition-all duration-300 block"
+                  >
+                    <div class="h-[88px] w-[184px] flex justify-center">
+                      <img
+                        src="../assets/homepage/battery2.png"
+                        alt="Product Image"
+                        class="object-fit"
+                      />
+                    </div>
+                    <div
+                      class="flex flex-row justify-between items-center mt-3"
+                    >
+                      <p class="text-sm">Web Price</p>
+                      <p>
+                        <span class="font-bold text-lg">$293.17</span>
+                        <span class="text-gray-500">/ea</span>
+                      </p>
+                    </div>
+                    <p class="text-xs font-bold">DEWALT</p>
+                    <p class="text-sm font-bold">
+                      Power Tool Battery: 20V, Lithium-ion
+                    </p>
+                    <p class="text-sm pt-1 text-gray-500">MSC# 73659377</p>
+
+                    <button
+                      class="bg-primary-blue mt-3 text-white font-bold py-2 px-5 rounded-full w-full hover:bg-primary-blue_dark transition-all duration-300"
+                    >
+                      Add to Cart
+                    </button>
+                  </article>
+                </div>
+
+                <article
+                  class="absolute right-0 top-0 min-h-full items-center flex rounded-l z-10 opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-opacity duration-300"
+                >
+                  <button
+                    class="scroll-right bg-white w-9 h-32 flex items-center justify-center shadow-[-4px_0px_5px_0px_rgba(0,0,0,0.25)] rounded-l -right-2 relative"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 320 512"
+                      class="w-3 fill-primary-blue rotate-180"
+                    >
+                      <path
+                        d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"
+                      />
+                    </svg>
+                  </button>
+                </article>
+              </section>
+            </div>
+          </section>
+
+          <section class="bg-white py-6">
+            <div class="mx-auto max-w-screen-2xl px-10 2xl:px-0 flex flex-col">
+              <div
+                class="flex flex-col sm:flex-row sm:flex-wrap sm:items-center after:flex-1 after:bg-monochromes-grey_xlight after:h-[1px] sm:after:order-2 after:hidden sm:after:block"
+              >
+                <h1 class="font-bold text-xl mr-2 order-1 sm:order-1">
+                  Browse Our Categories
+                </h1>
+
+                <button
+                  id="toggleHidden"
+                  class="order-3 sm:order-3 text-primary-blue_xdark border rounded border-monochromes-grey_xlight font-bold py-1 px-4 sm:ml-2"
+                >
+                  View All Categories →
+                </button>
+
+                <p
+                  class="text-sm order-2 sm:order-4 sm:basis-full sm:w-full py-3 sm:py-0"
+                >
+                  Extensive product range tailored around your Metalworking,
+                  Safety and MRO needs
+                </p>
+              </div>
+
+              <div
+                id="categories"
+                class="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 border-l border-t border-monochromes-grey_xlight rounded w-full mt-4 text-center font-bold text-sm cursor-pointer"
+              >
+                <article
+                  class="flex p-2 sm:p-0 flex-col sm:min-h-52 border border-t-white border-l-white border-b-monochromes-grey_xlight border-r-monochromes-grey_xlight sm:items-center justify-center hover:border-2 hover:border-primary-blue hover:text-primary-blue transition-all"
+                >
+                  <div
+                    class="sm:p-3 flex items-center sm:justify-center sm:flex-col"
+                  >
+                    <img
+                      src="../assets/homepage/milling.jpg"
+                      class="sm:mb-2 w-16 mr-2 sm:mr-0"
+                    />
+                    <p class="text-base">Milling</p>
+                  </div>
+                </article>
+
+                <article
+                  class="flex p-2 sm:p-0 flex-col sm:min-h-52 border border-t-white border-l-white border-b-monochromes-grey_xlight border-r-monochromes-grey_xlight sm:items-center justify-center hover:border-2 hover:border-primary-blue hover:text-primary-blue transition-all"
+                >
+                  <div
+                    class="sm:p-3 flex items-center sm:justify-center sm:flex-col"
+                  >
+                    <img
+                      src="../assets/homepage/hole-making.png"
+                      class="sm:mb-2 w-16 mr-2 sm:mr-0"
+                    />
+                    <p class="text-base">Hole Making</p>
+                  </div>
+                </article>
+
+                <article
+                  class="flex p-2 sm:p-0 flex-col sm:min-h-52 border border-t-white border-l-white border-b-monochromes-grey_xlight border-r-monochromes-grey_xlight sm:items-center justify-center hover:border-2 hover:border-primary-blue hover:text-primary-blue transition-all"
+                >
+                  <div
+                    class="sm:p-3 flex items-center sm:justify-center sm:flex-col"
+                  >
+                    <img
+                      src="../assets/homepage/safety.png"
+                      class="sm:mb-2 w-16 mr-2 sm:mr-0"
+                    />
+                    <p class="text-base">Safety</p>
+                  </div>
+                </article>
+
+                <article
+                  class="flex p-2 sm:p-0 flex-col sm:min-h-52 border border-t-white border-l-white border-b-monochromes-grey_xlight border-r-monochromes-grey_xlight sm:items-center justify-center hover:border-2 hover:border-primary-blue hover:text-primary-blue transition-all"
+                >
+                  <div
+                    class="sm:p-3 flex items-center sm:justify-center sm:flex-col"
+                  >
+                    <img
+                      src="../assets/homepage/abrasives.png"
+                      class="sm:mb-2 w-16 mr-2 sm:mr-0"
+                    />
+                    <p class="text-base">Abrasives</p>
+                  </div>
+                </article>
+
+                <article
+                  class="flex p-2 sm:p-0 flex-col sm:min-h-52 border border-t-white border-l-white border-b-monochromes-grey_xlight border-r-monochromes-grey_xlight sm:items-center justify-center hover:border-2 hover:border-primary-blue hover:text-primary-blue transition-all"
+                >
+                  <div
+                    class="sm:p-3 flex items-center sm:justify-center sm:flex-col"
+                  >
+                    <img
+                      src="../assets/homepage/indexable.png"
+                      class="sm:mb-2 w-16 mr-2 sm:mr-0"
+                    />
+                    <p class="text-base">Indexable Cutting Tools</p>
+                  </div>
+                </article>
+
+                <article
+                  class="flex p-2 sm:p-0 flex-col sm:min-h-52 border border-t-white border-l-white border-b-monochromes-grey_xlight border-r-monochromes-grey_xlight sm:items-center justify-center hover:border-2 hover:border-primary-blue hover:text-primary-blue transition-all"
+                >
+                  <div
+                    class="sm:p-3 flex items-center sm:justify-center sm:flex-col"
+                  >
+                    <img
+                      src="../assets/homepage/power-tools.png"
+                      class="sm:mb-2 w-16 mr-2 sm:mr-0"
+                    />
+                    <p class="text-base">Power Tools</p>
+                  </div>
+                </article>
+
+                <article
+                  class="flex p-2 sm:p-0 flex-col sm:min-h-52 border border-t-white border-l-white border-b-monochromes-grey_xlight border-r-monochromes-grey_xlight sm:items-center justify-center hover:border-2 hover:border-primary-blue hover:text-primary-blue transition-all"
+                >
+                  <div
+                    class="sm:p-3 flex items-center sm:justify-center sm:flex-col"
+                  >
+                    <img
+                      src="../assets/homepage/hose.png"
+                      class="sm:mb-2 w-16 mr-2 sm:mr-0"
+                    />
+                    <p class="text-base">Hose, Tube, Fittings & Valves</p>
+                  </div>
+                </article>
+
+                <article
+                  class="flex p-2 sm:p-0 flex-col sm:min-h-52 border border-t-white border-l-white border-b-monochromes-grey_xlight border-r-monochromes-grey_xlight sm:items-center justify-center hover:border-2 hover:border-primary-blue hover:text-primary-blue transition-all"
+                >
+                  <div
+                    class="sm:p-3 flex items-center sm:justify-center sm:flex-col"
+                  >
+                    <img
+                      src="../assets/homepage/hand-tools.png"
+                      class="sm:mb-2 w-16 mr-2 sm:mr-0"
+                    />
+                    <p class="text-base">Hand Tools</p>
+                  </div>
+                </article>
+
+                <article
+                  class="flex p-2 sm:p-0 flex-col sm:min-h-52 border border-t-white border-l-white border-b-monochromes-grey_xlight border-r-monochromes-grey_xlight sm:items-center justify-center hover:border-2 hover:border-primary-blue hover:text-primary-blue transition-all"
+                >
+                  <div
+                    class="sm:p-3 flex items-center sm:justify-center sm:flex-col"
+                  >
+                    <img
+                      src="../assets/homepage/clamping.png"
+                      class="sm:mb-2 w-16 mr-2 sm:mr-0"
+                    />
+                    <p class="text-base">Clamping, Workholding & Positioning</p>
+                  </div>
+                </article>
+
+                <article
+                  class="flex p-2 sm:p-0 flex-col sm:min-h-52 border border-t-white border-l-white border-b-monochromes-grey_xlight border-r-monochromes-grey_xlight sm:items-center justify-center hover:border-2 hover:border-primary-blue hover:text-primary-blue transition-all"
+                >
+                  <div
+                    class="sm:p-3 flex items-center sm:justify-center sm:flex-col"
+                  >
+                    <img
+                      src="../assets/homepage/fasteners.png"
+                      class="sm:mb-2 w-16 mr-2 sm:mr-0"
+                    />
+                    <p class="text-base">Fasteners</p>
+                  </div>
+                </article>
+
+                <article
+                  class="flex p-2 sm:p-0 flex-col sm:min-h-52 border border-t-white border-l-white border-b-monochromes-grey_xlight border-r-monochromes-grey_xlight sm:items-center justify-center hover:border-2 hover:border-primary-blue hover:text-primary-blue transition-all"
+                >
+                  <div
+                    class="sm:p-3 flex items-center sm:justify-center sm:flex-col"
+                  >
+                    <img
+                      src="../assets/homepage/janitorial.png"
+                      class="sm:mb-2 w-16 mr-2 sm:mr-0"
+                    />
+                    <p class="text-base">Janitorial & Facility Maintenance</p>
+                  </div>
+                </article>
+
+                <article
+                  class="flex p-2 sm:p-0 flex-col sm:min-h-52 border border-t-white border-l-white border-b-monochromes-grey_xlight border-r-monochromes-grey_xlight sm:items-center justify-center hover:border-2 hover:border-primary-blue hover:text-primary-blue transition-all rounded-r"
+                >
+                  <div
+                    class="sm:p-3 flex items-center sm:justify-center sm:flex-col"
+                  >
+                    <img
+                      src="../assets/homepage/lighting.png"
+                      class="sm:mb-2 w-16 mr-2 sm:mr-0"
+                    />
+                    <p class="text-base">Lighting & Electrical</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </section>
+
+          <section
+            class="mx-auto max-w-screen-2xl flex flex-col px-10 2xl:px-0"
+          >
+            <div
+              class="flex pt-4 items-center after:flex-1 after:bg-monochromes-grey_xlight after:h-[1px] mb-4"
+            >
+              <h1 class="font-bold text-xl mr-2">
+                Services Designed For Your Business Needs
+              </h1>
+            </div>
+            <!-- 1st section  -->
+            <div class="flex flex-col sm:flex-row gap-4">
+              <article class="bg-white rounded w-full lg:w-4/12">
+                <div
+                  class="h-[140px] overflow-hidden flex justify-center items-center rounded-t"
+                >
+                  <img
+                    src="../assets/homepage/procurement.jpg"
+                    alt=""
+                    class="object-cover h-full w-full"
+                  />
+                </div>
+                <div
+                  class="p-5 flex sm:flex-col lg:flex-row items-center sm:items-start lg:items-center"
+                >
+                  <span class="font-bold text-base">eProcurement</span>
+                  <button
+                    class="sm:mt-4 lg:mt-0 ml-auto sm:ml-0 lg:ml-auto px-2 md:px-5 rounded-full font-bold cursor-pointer min-w-24 md:min-w-32 bg-transparent border text-primary-blue_dark border-primary-blue_dark text-sm py-1 hover:bg-primary-blue_xlight"
+                  >
+                    Learn More
+                  </button>
+                </div>
+              </article>
+
+              <article class="bg-white rounded w-full lg:w-4/12">
+                <div
+                  class="h-[140px] overflow-hidden flex justify-center items-center rounded-t"
+                >
+                  <img
+                    src="../assets/homepage/inventory-management.jpg"
+                    alt=""
+                    class="object-cover h-full w-full"
+                  />
+                </div>
+                <div
+                  class="p-5 flex sm:flex-col lg:flex-row items-center sm:items-start lg:items-center"
+                >
+                  <span class="font-bold text-base">Inventory Management</span>
+                  <button
+                    class="sm:mt-4 lg:mt-0 ml-auto sm:ml-0 lg:ml-auto px-2 md:px-5 rounded-full font-bold cursor-pointer min-w-24 md:min-w-32 bg-transparent border text-primary-blue_dark border-primary-blue_dark text-sm py-1 hover:bg-primary-blue_xlight"
+                  >
+                    Learn More
+                  </button>
+                </div>
+              </article>
+
+              <article class="bg-white rounded w-full lg:w-4/12">
+                <div
+                  class="h-[140px] overflow-hidden flex justify-center items-center rounded-t"
+                >
+                  <img
+                    src="../assets/homepage/safety-service.jpg"
+                    alt=""
+                    class="object-cover h-full w-full"
+                  />
+                </div>
+                <div
+                  class="p-5 flex sm:flex-col lg:flex-row items-center sm:items-start lg:items-center"
+                >
+                  <span class="font-bold text-base">Safety Service</span>
+                  <button
+                    class="sm:mt-4 lg:mt-0 ml-auto sm:ml-0 lg:ml-auto px-2 md:px-5 rounded-full font-bold cursor-pointer min-w-24 md:min-w-32 bg-transparent border text-primary-blue_dark border-primary-blue_dark text-sm py-1 hover:bg-primary-blue_xlight"
+                  >
+                    Learn More
+                  </button>
+                </div>
+              </article>
+            </div>
+
+            <!-- 2nd section -->
+            <article
+              class="p-3 w-full flex items-center justify-center bg-white font-bold my-4 text-center"
+            >
+              <span>
+                Have a Question? We’re here to help Call:
+                <a href="#" class="text-primary-blue_dark">1-800-645-7270</a> or
+                Email
+                <a
+                  href="mailto:support@mscdirect.com"
+                  class="text-primary-blue_dark"
+                  >support@mscdirect.com
+                </a>
+              </span>
+            </article>
+
+            <!-- 3rd section -->
+            <div class="flex flex-col md:flex-row gap-4">
+              <article
+                class="w-full md:w-6/12 bg-white rounded flex flex-col sm:flex-row"
+              >
+                <div
+                  class="order-2 sm:order-1 p-5 sm:w-6/12 flex flex-col justify-center"
+                >
+                  <b class="font-bold text-base">Save with our sales flyers</b>
+                  <p class="text-sm mb-4">
+                    This body copy area can support up to 108 cc max including
+                    spaces and the text can wrap to container.
+                  </p>
+                  <button
+                    class="px-2 w-fit md:px-5 rounded-full font-bold cursor-pointer min-w-24 md:min-w-32 bg-transparent border text-primary-blue_dark border-primary-blue_dark text-sm py-1 hover:bg-primary-blue_xlight"
+                  >
+                    Shop Clearance
+                  </button>
+                </div>
+
+                <div
+                  class="order-1 sm:order-2 sm:w-6/12 overflow-hidden flex items-center justify-center rounded-r"
+                >
+                  <img
+                    src="../assets/homepage/save-our-sales.jpg"
+                    alt=""
+                    class="h-full w-full object-cover"
+                  />
+                </div>
+              </article>
+
+              <article
+                class="w-full md:w-6/12 bg-white rounded flex flex-col sm:flex-row"
+              >
+                <div
+                  class="sm:w-6/12 overflow-hidden flex items-center justify-center rounded-l"
+                >
+                  <img
+                    src="../assets/homepage/exclusive-brand.jpg"
+                    alt=""
+                    class="h-full w-full object-cover"
+                  />
+                </div>
+
+                <div class="p-5 sm:w-6/12 flex flex-col items-start">
+                  <b class="font-bold text-base">Exclusive Brands Clearance</b>
+                  <p class="text-sm mb-4">
+                    Save up to 40% on calipers & micrometers
+                  </p>
+                  <button
+                    class="mt-auto px-2 md:px-5 rounded-full font-bold cursor-pointer min-w-24 md:min-w-32 bg-transparent border text-primary-blue_dark border-primary-blue_dark text-sm py-1 hover:bg-primary-blue_xlight"
+                  >
+                    Shop Clearance
+                  </button>
+                </div>
+              </article>
+            </div>
+
+            <!-- 4th section -->
+
+            <div
+              class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 my-4"
+            >
+              <article class="bg-white rounded">
+                <div class="h-[140px] overflow-hidden rounded-t">
+                  <img
+                    src="../assets/homepage/two-ine.jpg"
+                    alt=""
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+
+                <div class="p-5 flex flex-col items-start">
+                  <p class="font-bold text-base mb-4">
+                    This is a Line Can Take up to 48CC Max or 2 line
+                  </p>
+                  <button
+                    class="px-2 md:px-5 rounded-full font-bold cursor-pointer min-w-24 md:min-w-32 bg-transparent border text-primary-blue_dark border-primary-blue_dark text-sm py-1 hover:bg-primary-blue_xlight"
+                  >
+                    Shop Clearance
+                  </button>
+                </div>
+              </article>
+
+              <article class="bg-white rounded">
+                <div class="h-[140px] overflow-hidden rounded-t">
+                  <img
+                    src="../assets/homepage/rigid.jpg"
+                    alt=""
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+
+                <div class="p-5 flex flex-col items-start">
+                  <p class="font-bold text-base mb-4">
+                    This is a Line Can Take up to 48CC Max or 2 line
+                  </p>
+                  <button
+                    class="px-2 md:px-5 rounded-full font-bold cursor-pointer min-w-24 md:min-w-32 bg-transparent border text-primary-blue_dark border-primary-blue_dark text-sm py-1 hover:bg-primary-blue_xlight"
+                  >
+                    Shop Clearance
+                  </button>
+                </div>
+              </article>
+
+              <article class="bg-white rounded">
+                <div class="h-[140px] overflow-hidden rounded-t">
+                  <img
+                    src="../assets/homepage/gloves.jpg"
+                    alt=""
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+
+                <div class="p-5 flex flex-col items-start">
+                  <p class="font-bold text-base mb-4">
+                    This is a Line Can Take up to 48CC Max or 2 line
+                  </p>
+                  <button
+                    class="px-2 md:px-5 rounded-full font-bold cursor-pointer min-w-24 md:min-w-32 bg-transparent border text-primary-blue_dark border-primary-blue_dark text-sm py-1 hover:bg-primary-blue_xlight"
+                  >
+                    Shop Clearance
+                  </button>
+                </div>
+              </article>
+
+              <article class="bg-white rounded">
+                <div class="h-[140px] overflow-hidden rounded-t">
+                  <img
+                    src="../assets/homepage/dactory.jpg"
+                    alt=""
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+
+                <div class="p-5 flex flex-col items-start">
+                  <p class="font-bold text-base mb-4">
+                    This is a Line Can Take up to 48CC Max or 2 line
+                  </p>
+                  <button
+                    class="px-2 md:px-5 rounded-full font-bold cursor-pointer min-w-24 md:min-w-32 bg-transparent border text-primary-blue_dark border-primary-blue_dark text-sm py-1 hover:bg-primary-blue_xlight"
+                  >
+                    Shop Clearance
+                  </button>
+                </div>
+              </article>
+            </div>
+
+            <!-- 5ft section -->
+
+            <article class="bg-white rounded p-6 mb-6">
+              <h3 class="text-xl mb-4 font-bold">MSC Industrial Supply Co.</h3>
+              <p class="text-sm mb-4 text-monochromes-grey">
+                MSC Industrial Supply, Inc. is a leading North American
+                distributor of metalworking and
+                <a href="#" class="text-black underline">maintenance</a>, repair
+                and operations
+                <a href="#" class="text-black underline">(MRO) products</a> and
+                services. With over 75 years of experience, MSC is dedicated to
+                helping customers drive greater productivity, profitability and
+                growth. MSC features over 1.5 million products ready-to-ship.
+                Our inventory management and other supply chain solutions ensure
+                that your workforce and facility are supplied with equipment
+                that is reliable, durable and accurate for every operation.
+              </p>
+
+              <p class="text-sm text-monochromes-grey">
+                We are your steadfast partner in providing innovative solutions
+                that deliver. That includes our knowledgeable customer service
+                associates who strive to ensure that every customer is provided
+                with the best possible shopping experience - first time, every
+                time.
+              </p>
+            </article>
+          </section>
+
+          <!-- <div id="icon-bigbook" class="hidden lg:inline-block">
+            <img
+              src="//cdn.mscdirect.com/global/v2/img/side-icons/bigbook-button.svg?v=3"
+              alt="view the big book"
+            />
+          </div>
+
+          <div id="icon-contact-us" class="hidden lg:inline-block">
+            <img src="../assets/homepage/feedback.png" alt="Give us feedback" />
+          </div> -->
+
+          <script>
+            const categoriesContainer = document.getElementById("categories");
+            const articles = categoriesContainer.querySelectorAll("article");
+            const toggleBtn = document.getElementById("toggleHidden");
+
+            let hidden = true;
+
+            function getLimit() {
+              const width = window.innerWidth;
+              if (width < 768) return 6;
+              if (width < 1024) return 8;
+              return articles.length;
+            }
+
+            function updateVisibleArticles() {
+              const limit = getLimit();
+
+              articles.forEach((article, index) => {
+                if (hidden && index >= limit) {
+                  article.classList.add("hidden");
+                } else {
+                  article.classList.remove("hidden");
+                }
+              });
+
+              toggleBtn.textContent = hidden
+                ? "View All Categories →"
+                : "View Less Categories";
+            }
+
+            toggleBtn.addEventListener("click", () => {
+              hidden = !hidden;
+              updateVisibleArticles();
+            });
+
+            window.addEventListener("resize", () => {
+              updateVisibleArticles();
+            });
+
+            window.addEventListener("DOMContentLoaded", updateVisibleArticles);
+          </script>
+
+          <script type="module">
+            document.addEventListener("DOMContentLoaded", () => {
+              const scrollContainers = document.querySelectorAll(
+                "div.overflow-x-scroll"
+              );
+
+              scrollContainers.forEach((scrollContainer) => {
+                const parent =
+                  scrollContainer.closest("section.group") ||
+                  scrollContainer.closest("div");
+
+                const btnLeft = parent.querySelector("button.scroll-left");
+                const btnRight = parent.querySelector("button.scroll-right");
+
+                const updateButtonStates = () => {
+                  const maxScrollLeft =
+                    scrollContainer.scrollWidth - scrollContainer.clientWidth;
+
+                  const shouldHide = parent.classList.contains("group");
+
+                  if (btnLeft) {
+                    if (shouldHide && scrollContainer.scrollLeft <= 0) {
+                      btnLeft.classList.add("opacity-0", "pointer-events-none");
+                    } else {
+                      btnLeft.classList.remove(
+                        "opacity-0",
+                        "pointer-events-none"
+                      );
+                    }
+                  }
+
+                  if (btnRight) {
+                    if (
+                      shouldHide &&
+                      scrollContainer.scrollLeft >= maxScrollLeft - 1
+                    ) {
+                      btnRight.classList.add(
+                        "opacity-0",
+                        "pointer-events-none"
+                      );
+                    } else {
+                      btnRight.classList.remove(
+                        "opacity-0",
+                        "pointer-events-none"
+                      );
+                    }
+                  }
+                };
+
+                const scrollByAmount = (amount) => {
+                  scrollContainer.scrollBy({
+                    left: amount,
+                    behavior: "smooth",
+                  });
+                };
+
+                btnLeft?.addEventListener("click", () => scrollByAmount(-300));
+                btnRight?.addEventListener("click", () => scrollByAmount(300));
+                scrollContainer?.addEventListener("scroll", updateButtonStates);
+
+                // Forzar actualización al cargar
+                updateButtonStates();
+
+                // Forzar render de scroll en mouseenter
+                scrollContainer?.addEventListener("mouseenter", () => {
+                  if (
+                    scrollContainer.scrollWidth <= scrollContainer.clientWidth
+                  )
+                    return;
+                  const original = scrollContainer.scrollLeft;
+                  scrollContainer.scrollLeft += 1;
+                  scrollContainer.scrollLeft = original;
+                });
+              });
+            });
+          </script>
           <!-- place all HTML for new components here -->
         </div>
       </main>
 
       <footer
         id="footerId"
-        class="px-4 md:px-6 xl:px-8 2xl:px-10 3xl:px-15 py-8 2xl:py-10 lg:pt-8 md:pt-4 pt-3 pb-10 text-monochromes font-roboto tracking-wide"
+        class="px-4 md:px-6 xl:px-8 2xl:px-10 3xl:px-15 py-8 2xl:py-10 lg:pt-8 md:pt-4 pt-3 pb-10 text-monochromes font-roboto tracking-wide bg-white"
       >
         <div
           class="flex bordr-right mrgn-l justify-center xl:mx-auto 3xl:w-1456 sm:flex-col lg:flex-row border-b border-primary-variant-3 accordion-container"
@@ -4619,12 +7344,12 @@
         alt="view the big book"
       />
     </div>
-    <div id="icon-contact-us" onclick="sideIcons.openSideContact(this)">
+    <!-- <div id="icon-contact-us" onclick="sideIcons.openSideContact(this)">
       <img
         src="//cdn.mscdirect.com/global/v2/img/side-icons/contact-us-open.svg?v=2"
         alt="contact us at 1-800-645-7270"
       />
-    </div>
+    </div> -->
     <div class="p-w-r">
       <div data-pr-root="856667-en_US">
         <script data-pr-config="856667-en_US">
@@ -5315,7 +8040,7 @@ For example 555-1234"
           background-color: transparent;
           padding: 0px;
           margin: 0px;
-          bottom: 137px;
+          top: 24%;
           right: -1px;
           width: 34px;
           transition: 0.5s;
