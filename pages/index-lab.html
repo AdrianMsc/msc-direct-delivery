@@ -40,8 +40,18 @@
               class="flex flex-col items-start md:items-center gap-1 md:gap-4 md:flex-row"
             >
               <p class="font-bold text-xl">Top Categories for You</p>
-              <p class="text-primary-blue_dark font-bold">
-                View All Categories →
+              <p class="text-primary-blue_dark font-bold flex gap-x-2">
+                View All Categories
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                  width="12"
+                  class="fill-primary-blue_dark"
+                >
+                  <path
+                    d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+                  />
+                </svg>
               </p>
             </div>
             <div class="flex-row gap-2 hidden md:flex">
@@ -1045,9 +1055,9 @@
 
           <button
             id="toggleHidden"
-            class="order-3 sm:order-3 text-primary-blue_xdark border rounded border-monochromes-grey_xlight font-bold py-1 px-4 sm:ml-2"
+            class="order-3 sm:order-3 text-primary-blue_xdark border rounded border-monochromes-grey_xlight font-bold py-1 px-4 sm:ml-2 flex gap-x-2"
           >
-            View All Categories →
+            View All Categories
           </button>
 
           <p
@@ -1506,8 +1516,10 @@
           }
         });
 
-        toggleBtn.textContent = hidden
-          ? "View All Categories →"
+        const arrowRight = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="15" class="fill-primary-blue_xdark"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>`;
+
+        toggleBtn.innerHTML = hidden
+          ? `View All Categories ${arrowRight}`
           : "View Less Categories";
       }
 
