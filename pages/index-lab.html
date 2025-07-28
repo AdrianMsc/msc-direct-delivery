@@ -1348,7 +1348,7 @@
                 <img
                   src="../assets/homepage/testimonial.png"
                   alt="Chris Basgall"
-                  class="h-[250px]"
+                  class="h-[250px] testimonial-image transition-transform duration-[1200ms] ease-out"
                 />
               </div>
             </div>
@@ -1683,6 +1683,7 @@
     <script>
       document.addEventListener("DOMContentLoaded", () => {
         const icon = document.querySelector(".rotate-icon");
+        const image = document.querySelector(".testimonial-image");
         const section = document.getElementById("parallax-section");
 
         function clamp(value, min, max) {
@@ -1695,24 +1696,54 @@
           );
         }
 
-        function updateRotation() {
+        function updateEffects() {
           const rect = section.getBoundingClientRect();
           const viewportHeight = window.innerHeight;
 
-          // distancia desde la parte superior de la ventana hasta la parte superior de la sección
-          const scrollProgress = clamp(
-            1 - (rect.top + rect.height) / (viewportHeight + rect.height),
-            0,
-            1
-          );
+          const extendedMargin = 400;
 
-          const rotation = mapRange(scrollProgress, 0, 1, -90, 90);
+          // extendemos el margen superior e inferior
+          const sectionTop = rect.top - extendedMargin;
+          const sectionBottom = rect.bottom + extendedMargin;
+
+          let rotation = -90; // default icono
+          let translateY = -60; // default imagen
+
+          // Solo aplicar si la sección está dentro del rango extendido
+          if (sectionTop <= viewportHeight && sectionBottom >= 0) {
+            // Progreso global de la sección dentro del viewport extendido
+            const progress = clamp(
+              1 - (sectionTop + rect.height) / (viewportHeight + rect.height),
+              0,
+              1
+            );
+
+            // Entrando (de arriba hacia abajo)
+            if (sectionTop > 0 && sectionTop < viewportHeight) {
+              rotation = mapRange(progress, 0, 0.5, -90, 0); // de -90° a 0°
+              translateY = mapRange(progress, 0, 0.5, -60, 0); // de -60px a 0px
+            }
+            // Zona central (quieto)
+            else if (sectionTop <= 0 && sectionBottom >= viewportHeight) {
+              rotation = 0;
+              translateY = 0;
+            }
+            // Saliendo (abajo hacia arriba o arriba hacia abajo)
+            else if (sectionBottom < viewportHeight && sectionBottom > 0) {
+              const exitProgress = 1 - sectionBottom / viewportHeight;
+              rotation = mapRange(exitProgress, 0, 1, 0, 90); // de 0° a 90°
+              translateY = mapRange(exitProgress, 0, 1, 0, 60); // de 0px a 60px
+            }
+          }
+
+          // Aplicar transformaciones
           icon.style.transform = `rotate(${rotation}deg)`;
+          image.style.transform = `translateY(${translateY}px)`;
         }
 
-        window.addEventListener("scroll", updateRotation, { passive: true });
-        window.addEventListener("resize", updateRotation);
-        updateRotation(); // en caso de que ya esté visible
+        window.addEventListener("scroll", updateEffects, { passive: true });
+        window.addEventListener("resize", updateEffects);
+        updateEffects();
       });
     </script>
 
