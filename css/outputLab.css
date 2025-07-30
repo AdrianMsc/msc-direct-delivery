@@ -680,6 +680,11 @@ video {
   margin-bottom: 1.5rem;
 }
 
+.mx-6 {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -865,6 +870,10 @@ video {
 
 .w-48 {
   width: 12rem;
+}
+
+.w-\[3\.75rem\] {
+  width: 3.75rem;
 }
 
 .min-w-24 {
@@ -1563,6 +1572,11 @@ video {
     margin-right: 1.25rem;
   }
 
+  .sm\:mx-0 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
   .sm\:mb-2 {
     margin-bottom: 0.5rem;
   }
@@ -1783,6 +1797,10 @@ video {
 
   .lg\:w-full {
     width: 100%;
+  }
+
+  .lg\:w-16 {
+    width: 4rem;
   }
 
   .lg\:flex-1 {
