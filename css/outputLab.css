@@ -1534,6 +1534,11 @@ video {
     margin-right: 2.5rem;
   }
 
+  .sm\:mx-5 {
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+  }
+
   .sm\:mb-2 {
     margin-bottom: 0.5rem;
   }
