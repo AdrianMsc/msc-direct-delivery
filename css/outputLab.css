@@ -728,6 +728,10 @@ video {
   margin-top: auto;
 }
 
+.box-border {
+  box-sizing: border-box;
+}
+
 .block {
   display: block;
 }
