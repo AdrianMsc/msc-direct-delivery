@@ -728,6 +728,10 @@ video {
   margin-top: auto;
 }
 
+.mr-6 {
+  margin-right: 1.5rem;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -857,6 +861,10 @@ video {
 
 .w-screen {
   width: 100vw;
+}
+
+.w-48 {
+  width: 12rem;
 }
 
 .min-w-24 {
@@ -1241,6 +1249,18 @@ video {
 
 .pt-6 {
   padding-top: 1.5rem;
+}
+
+.pl-14 {
+  padding-left: 3.5rem;
+}
+
+.pl-11 {
+  padding-left: 2.75rem;
+}
+
+.pl-7 {
+  padding-left: 1.75rem;
 }
 
 .text-left {
@@ -1686,6 +1706,10 @@ video {
 
   .md\:items-center {
     align-items: center;
+  }
+
+  .md\:justify-start {
+    justify-content: flex-start;
   }
 
   .md\:gap-4 {
