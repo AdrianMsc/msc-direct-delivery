@@ -1948,6 +1948,14 @@ video {
   .xl\:block {
     display: block;
   }
+
+  .xl\:flex {
+    display: flex;
+  }
+
+  .xl\:grid-cols-6 {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
 }
 
 @media (min-width: 1536px) {
