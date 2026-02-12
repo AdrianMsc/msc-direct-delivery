@@ -16,7 +16,147 @@
     />
   </head>
 
-  <body class="bg-[#f2f2f2]">
+  <body class="bg-[#f2f2f2] relative">
+    <div
+      id="lab-password-overlay"
+      class="fixed z-50 flex h-full w-full items-center justify-center bg-black/70 px-5 top-0 left-0 bg-white"
+    >
+      <div class="w-[50%] max-w-md rounded bg-white p-6 shadow-xl">
+        <div class="flex justify-center">
+          <img
+            src="https://cdn.mscdirect.com/global/v2/img/header/msc-logo.svg?im=Resize,width=212,height=46"
+            alt="MSC"
+            class="h-10"
+          />
+        </div>
+        <p class="text-lg font-bold">Restricted access</p>
+        <p class="mt-1 text-sm text-gray-600">Write the password to continue</p>
+        <div
+          class="mt-4 flex w-full items-center gap-3 rounded border border-gray-300 bg-white px-3 py-2"
+        >
+          <input
+            id="lab-password-input"
+            type="password"
+            autocomplete="current-password"
+            class="w-full bg-transparent outline-none px-3 py-1"
+            placeholder="Contraseña"
+          />
+        </div>
+        <div class="mt-3 flex gap-3">
+          <button
+            id="lab-password-submit"
+            class="w-full rounded bg-blue-600 px-3 py-2 font-bold text-white"
+            type="button"
+          >
+            Enter
+          </button>
+          <button
+            id="lab-password-cancel"
+            class="w-full rounded border border-gray-300 bg-white px-3 py-2 font-bold text-gray-800"
+            type="button"
+          >
+            Cancel
+          </button>
+        </div>
+        <p
+          id="lab-password-error"
+          class="mt-3 hidden text-sm font-bold !text-red-600"
+        >
+          Access Denied
+        </p>
+      </div>
+    </div>
+
+    <script>
+      (function () {
+        const EXPECTED_USER = "fuelteam";
+        const EXPECTED_PASS = "J4c4rt42026!";
+
+        const overlay = document.getElementById("lab-password-overlay");
+        const input = document.getElementById("lab-password-input");
+        const submit = document.getElementById("lab-password-submit");
+        const cancel = document.getElementById("lab-password-cancel");
+        const error = document.getElementById("lab-password-error");
+
+        if (!overlay || !input || !submit || !cancel || !error) return;
+
+        document.documentElement.style.overflow = "hidden";
+
+        function deny() {
+          document.documentElement.style.overflow = "";
+          document.body.innerHTML =
+            '<div style="min-height:100vh;display:flex;align-items:center;justify-content:center;background:#111;color:#fff;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;padding:24px;text-align:center;"><div><div style="font-size:20px;font-weight:700;">Denied Access</div></div></div>';
+        }
+
+        function allow() {
+          document.documentElement.style.overflow = "";
+          overlay.remove();
+        }
+
+        function check() {
+          const value = String(input.value || "");
+          const ok = value === EXPECTED_PASS;
+          if (ok) {
+            allow();
+            return;
+          }
+          error.classList.remove("hidden");
+        }
+
+        submit.addEventListener("click", check);
+        cancel.addEventListener("click", deny);
+        input.addEventListener("keydown", function (e) {
+          if (e.key === "Enter") check();
+        });
+
+        document.addEventListener("keydown", function (e) {
+          if (e.key === "Escape") deny();
+        });
+
+        document.addEventListener("contextmenu", function (e) {
+          e.preventDefault();
+        });
+
+        document.addEventListener("keydown", function (e) {
+          const key = String(e.key || "").toLowerCase();
+          const ctrlOrCmd = e.ctrlKey || e.metaKey;
+
+          if (key === "f12") {
+            e.preventDefault();
+            deny();
+            return;
+          }
+
+          if (
+            ctrlOrCmd &&
+            e.shiftKey &&
+            (key === "i" || key === "j" || key === "c")
+          ) {
+            e.preventDefault();
+            deny();
+            return;
+          }
+
+          if (ctrlOrCmd && (key === "u" || key === "s" || key === "p")) {
+            e.preventDefault();
+            deny();
+          }
+        });
+
+        setInterval(function () {
+          const widthDiff = window.outerWidth - window.innerWidth;
+          const heightDiff = window.outerHeight - window.innerHeight;
+          if (widthDiff > 160 || heightDiff > 160) {
+            deny();
+          }
+        }, 600);
+
+        setTimeout(function () {
+          input.focus();
+        }, 0);
+      })();
+    </script>
+
     <div
       class="bg-[#F1F5FE] py-2 px-5 lg:px-10 2xl:px-0 text-center border border-primary-blue_light"
     >
@@ -1941,7 +2081,9 @@
         <article
           class="w-full md:w-6/12 bg-white rounded flex flex-col sm:flex-row"
         >
-          <div class="p-5 sm:w-6/12 flex flex-col items-start order-2 sm:order-1">
+          <div
+            class="p-5 sm:w-6/12 flex flex-col items-start order-2 sm:order-1"
+          >
             <b class="font-bold text-base">Exclusive Brands Clearance</b>
             <p class="text-sm mb-4">
               This body copy area can support up to 108 cc max including spaces
@@ -2136,7 +2278,7 @@
     <script type="module">
       document.addEventListener("DOMContentLoaded", () => {
         const scrollContainers = document.querySelectorAll(
-          "div.overflow-x-scroll"
+          "div.overflow-x-scroll",
         );
 
         scrollContainers.forEach((scrollContainer) => {
@@ -2228,7 +2370,7 @@
             const progress = clamp(
               1 - (sectionTop + rect.height) / (viewportHeight + rect.height),
               0,
-              1
+              1,
             );
 
             if (sectionTop > 0 && sectionTop < viewportHeight) {
